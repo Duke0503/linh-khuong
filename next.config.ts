@@ -1,7 +1,21 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "maihienngoctruc.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "maps.googleapis.com",
+        pathname: "/**",
+      },
+    ],
+    formats: ["image/webp", "image/avif"],
+  },
 };
 
 export default nextConfig;
