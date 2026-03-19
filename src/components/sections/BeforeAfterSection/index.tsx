@@ -139,6 +139,7 @@ export default function BeforeAfterSection() {
                   <Image
                     src={item.src}
                     alt={item.alt}
+                    title={item.label}
                     fill
                     className="object-cover transition-transform duration-500 hover:scale-105"
                     sizes="(max-width: 640px) 78vw, (max-width: 1024px) 40vw, 25vw"
