@@ -5,10 +5,11 @@ import RevealWrapper from "@/components/common/RevealWrapper";
 
 export default function AboutSection() {
   const highlights = [
-    "Thợ lành nghề, thi công đúng kỹ thuật",
-    "Vật liệu chất lượng cao, bền bỉ theo thời gian",
-    "Bảo hành rõ ràng, hỗ trợ tận tâm",
-    "Khảo sát & tư vấn miễn phí tại công trình",
+    "Hơn 10 năm kinh nghiệm — 500+ công trình thực tế tại TP.HCM",
+    "Thợ lành nghề, thi công đúng kỹ thuật, dọn sạch sau khi xong",
+    "Vật liệu chính hãng, chịu thời tiết nhiệt đới, bền 5–10 năm",
+    "Bảo hành bằng hợp đồng — có vấn đề gọi là có người trong 24h",
+    "Khảo sát tận nơi & báo giá miễn phí — không ép mua, không phát sinh",
   ];
 
   return (
@@ -28,12 +29,13 @@ export default function AboutSection() {
 
             <div className="bg-gradient-to-br from-white to-blue-50 border-l-4 border-[#1e4d8c] rounded-xl p-5 md:p-6 shadow-sm mb-6">
               <p className="text-gray-700 leading-relaxed text-base">
-                <strong className="text-[#f59e0b]">Cửa Cuốn – Mái Hiên Mái Xếp Linh Khương</strong> là
-                đơn vị chuyên tư vấn, thiết kế và thi công <strong>cửa cuốn</strong>, mái hiên,
-                mái xếp di động tại TP.HCM. Với đội ngũ thợ lành nghề, thi công
-                đúng kỹ thuật, vật liệu chất lượng và chế độ bảo hành rõ ràng,{" "}
-                <strong>Linh Khương</strong> cam kết mang đến giải pháp{" "}
-                <strong>cửa cuốn, mái hiên</strong> bền đẹp, hiệu quả và tiết kiệm chi phí.
+                Từ một xưởng cơ khí nhỏ, <strong className="text-[#f59e0b]">Linh Khương</strong> đã
+                phát triển thành đơn vị chuyên thi công{" "}
+                <strong>cửa cuốn, mái hiên, mái xếp</strong> được tin dùng tại TP.HCM với
+                hơn <strong>500 công trình thực tế</strong> — từ nhà ở, quán cà phê đến nhà
+                hàng và nhà máy. Chúng tôi không chỉ thi công rồi đi — mỗi công trình đều
+                được <strong>bảo hành bằng hợp đồng</strong>, thợ có mặt trong 24h khi có
+                sự cố.
               </p>
             </div>
 
@@ -51,7 +53,7 @@ export default function AboutSection() {
               className="inline-flex items-center gap-2 bg-[#1e4d8c] text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-[#153870] transition-colors shadow-md"
             >
               <Phone className="w-4 h-4" />
-              Gọi ngay: {siteConfig.contact.phone}
+              Báo giá miễn phí: {siteConfig.contact.phone}
             </a>
           </RevealWrapper>
 

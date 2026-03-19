@@ -23,10 +23,10 @@ export const siteConfig = {
   },
 
   seo: {
-    title: "Cửa Cuốn, Mái Hiên Linh Khương | Thi Công Mái Xếp, Cửa Cuốn Uy Tín Tại TP.HCM",
-    titleTemplate: "%s | Cửa Cuốn Mái Hiên Linh Khương",
+    title: "Cửa Cuốn Mái Hiên Linh Khương | Thi Công Uy Tín TP.HCM",
+    titleTemplate: "%s | Linh Khương",
     description:
-      "Cửa cuốn Linh Khương – chuyên thi công cửa cuốn, mái hiên, mái xếp di động tại TP.HCM. Uy tín – Bảo hành rõ ràng – Tư vấn miễn phí. Hotline: 0962568910",
+      "Hơn 10 năm thi công cửa cuốn, mái hiên, mái xếp tại TP.HCM. 500+ công trình thực tế — thợ lành nghề, bảo hành rõ ràng, báo giá miễn phí trong ngày. Gọi: 0962568910",
     keywords: [
       "cửa cuốn linh khương",
       "cua cuon linh khuong",

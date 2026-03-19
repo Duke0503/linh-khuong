@@ -57,9 +57,9 @@ export default function WhyChooseUs() {
             ))}
             <RevealWrapper direction="right" delay={4}>
               <div className="bg-gradient-to-br from-[#1e4d8c] to-[#153870] rounded-2xl p-5 text-white">
-                <h3 className="font-bold text-lg mb-2">Tư vấn miễn phí!</h3>
+                <h3 className="font-bold text-lg mb-2">Báo giá miễn phí trong ngày!</h3>
                 <p className="text-sm opacity-90 mb-3">
-                  Gọi ngay để được khảo sát và báo giá tận nơi, hoàn toàn miễn phí.
+                  Gọi ngay — thợ khảo sát tận nơi, báo giá chi tiết, không phát sinh, không ép mua.
                 </p>
                 <a
                   href={siteConfig.contact.phoneHref}

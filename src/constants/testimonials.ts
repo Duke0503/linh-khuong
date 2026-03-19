@@ -3,27 +3,27 @@ import type { Testimonial } from "@/types";
 export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Lê Thị Ngọc Ánh",
-    role: "Chủ quán cà phê, TP.HCM",
+    role: "Chủ quán cà phê, Quận 12 · TP.HCM",
     avatar: "http://maihienngoctruc.com/thumbs/80x80x1/upload/news/images-1770571269.jpg.webp",
     review:
-      "Mái Xếp Linh Khương thi công nhanh gọn, làm rất chắc chắn, mái xếp sử dụng tốt, che nắng mưa hiệu quả, tôi rất hài lòng.",
+      "Linh Khương thi công nhanh, làm chắc, không phát sinh một đồng. Mái xếp che nắng mưa rất tốt, khách ngồi thoải mái hơn hẳn. Đã giới thiệu thêm 2 người bạn làm theo.",
     stars: 5,
   },
   {
     name: "Nguyễn Văn Bảo Toàn",
-    role: "Chủ nhà hàng, TP.HCM",
+    role: "Chủ nhà hàng, Thủ Đức · TP.HCM",
     avatar: "http://maihienngoctruc.com/thumbs/80x80x1/upload/news/noo-phuoc-thinh-1770571625.jpg.webp",
     review:
-      "Từ ngày lắp mái xếp của Linh Khương, không gian quán mát hơn, khách ngồi đông hơn, thi công gọn gàng nên tôi yên tâm hợp tác.",
+      "Từ ngày lắp mái xếp, không gian quán mát hơn, khách ngồi đông hơn. Điều tôi thích nhất là thợ dọn sạch sau khi xong — không cần nhắc. Sẽ tiếp tục hợp tác khi mở chi nhánh.",
     stars: 5,
   },
   {
     name: "Trần Thị Bích",
-    role: "Chủ hộ gia đình, TP.HCM",
+    role: "Chủ hộ gia đình, Tân Phú · TP.HCM",
     avatar:
       "http://maihienngoctruc.com/thumbs/80x80x1/upload/news/999-anh-gai-xinh-viet-nam-hot-girl-cute-de-thuong-dep-xiu-ngang6690eae21a8d3-1770571399.webp.webp",
     review:
-      "Nhân viên tư vấn nhiệt tình, làm việc đúng hẹn, không phát sinh chi phí. Mái hiên bền đẹp, rất xứng đáng với số tiền bỏ ra.",
+      "Gọi buổi sáng, chiều đã có người khảo sát. Báo giá rõ ràng, đúng như cam kết, không thêm bớt. Mái hiên đẹp, bền, hàng xóm hỏi thăm liên tục. Rất xứng đáng với tiền bỏ ra.",
     stars: 5,
   },
 ];

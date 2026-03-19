@@ -7,17 +7,19 @@ export default function HeroSlider() {
     <section className="relative w-full" aria-label="Hero banner">
       {/* Hidden H1 for SEO — Google reads this */}
       <h1 className="sr-only">
-        Cửa Cuốn Linh Khương — Thi Công Cửa Cuốn, Mái Hiên, Mái Xếp Uy Tín Tại TP.HCM
+        Cửa Cuốn Linh Khương — Thi Công Mái Hiên, Mái Xếp Uy Tín TP.HCM
       </h1>
       <div className="relative w-full">
         {/* Banner image — tỉ lệ gốc, không crop */}
         <Image
           src="/banner_lk.png"
           alt="Linh Khương - Thi Công Mái Hiên, Mái Xếp Di Động Uy Tín TP.HCM"
+          title="Cửa Cuốn Mái Hiên Linh Khương"
           width={1920}
           height={640}
           className="w-full h-auto block"
           priority
+          fetchPriority="high"
           sizes="100vw"
         />
 
