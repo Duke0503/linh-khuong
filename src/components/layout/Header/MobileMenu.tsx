@@ -30,16 +30,19 @@ export default function MobileMenu({ onNav }: MobileMenuProps) {
         </svg>
       </SheetTrigger>
 
-      <SheetContent side="left" className="w-72 p-0 flex flex-col">
+      {/* [&>button]:hidden — ẩn nút X mặc định của SheetContent */}
+      <SheetContent side="left" className="w-72 p-0 flex flex-col [&>button]:hidden">
         {/* Header */}
         <div className="bg-[#1e4d8c] p-4 flex items-center justify-between flex-shrink-0">
-          <Image
-            src={siteConfig.logo}
-            alt={siteConfig.name}
-            width={130}
-            height={40}
-            className="h-10 w-auto object-contain brightness-0 invert"
-          />
+          <div className="bg-white rounded-lg px-2 py-1">
+            <Image
+              src={siteConfig.logo}
+              alt={siteConfig.name}
+              width={120}
+              height={36}
+              className="h-9 w-auto object-contain"
+            />
+          </div>
           <button onClick={() => setOpen(false)} aria-label="Đóng menu">
             <X className="w-5 h-5 text-white" />
           </button>

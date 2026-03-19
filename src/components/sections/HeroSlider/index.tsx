@@ -5,6 +5,10 @@ import { siteConfig } from "@/config/site";
 export default function HeroSlider() {
   return (
     <section className="relative w-full" aria-label="Hero banner">
+      {/* Hidden H1 for SEO — Google reads this */}
+      <h1 className="sr-only">
+        Mái Hiên Mái Xếp Linh Khương — Thi Công Mái Che, Cửa Cuốn Uy Tín Tại Bình Dương & TP.HCM
+      </h1>
       <div className="relative w-full">
         {/* Banner image — tỉ lệ gốc, không crop */}
         <Image

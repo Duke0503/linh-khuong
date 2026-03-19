@@ -61,7 +61,7 @@ export default function AboutSection() {
               <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4]">
                 <Image
                   src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab2-1770360916-1770567529.png.webp"
-                  alt="Mái hiên mái xếp Linh Khương"
+                  alt="Đội thợ thi công mái hiên mái xếp Linh Khương tại Bình Dương"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -70,7 +70,7 @@ export default function AboutSection() {
               <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4] mt-6">
                 <Image
                   src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab1-1770360916-1770567529.png.webp"
-                  alt="Thi công mái che chuyên nghiệp"
+                  alt="Công trình mái xếp di động thi công chuyên nghiệp"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 25vw"

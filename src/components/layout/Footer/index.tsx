@@ -18,13 +18,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Brand */}
         <div className="lg:col-span-1">
-          <Image
-            src={siteConfig.logo}
-            alt={siteConfig.name}
-            width={160}
-            height={50}
-            className="h-12 w-auto object-contain brightness-0 invert mb-4"
-          />
+          <div className="bg-white rounded-lg px-2 py-1 inline-block mb-4">
+            <Image
+              src={siteConfig.logo}
+              alt={siteConfig.name}
+              width={150}
+              height={46}
+              className="h-11 w-auto object-contain"
+            />
+          </div>
           <p className="text-sm leading-relaxed text-gray-400 mb-4">
             Chuyên tư vấn, thiết kế và thi công mái hiên, mái xếp, dù che nắng, mái vòm, cửa cuốn
             tại TP.HCM và các tỉnh lân cận.
@@ -123,7 +125,7 @@ export default function Footer() {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
           <p>© 2025 {siteConfig.fullName}. All rights reserved.</p>
-          <p>Thiết kế bởi Linh Khương Team</p>
+          <p>Thiết kế bởi Innovators Team</p>
         </div>
       </div>
     </footer>

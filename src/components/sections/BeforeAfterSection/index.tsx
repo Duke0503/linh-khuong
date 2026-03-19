@@ -22,18 +22,18 @@ interface GalleryItem {
 }
 
 const GALLERY: GalleryItem[] = [
-  { src: "/products/mai-xep-san-tennis.jpg",       alt: "Mái xếp sân tennis",          label: "Mái Xếp Sân Tennis"   },
-  { src: "/products/mai-xep-ho-boi.jpg",            alt: "Mái xếp hồ bơi",              label: "Mái Xếp Hồ Bơi"       },
-  { src: "/products/mai-xep-nhieu-tang-nha-pho.jpg",alt: "Mái xếp nhà phố nhiều tầng",  label: "Mái Xếp Nhà Phố"      },
-  { src: "/products/mai-xep-nha-hang-dem.jpg",      alt: "Mái xếp nhà hàng ban đêm",    label: "Mái Xếp Nhà Hàng"     },
-  { src: "/products/mai-hien-nau-nha-pho-logo.jpg", alt: "Mái hiên nhà phố",             label: "Mái Hiên Nhà Phố"     },
-  { src: "/products/mai-hien-xanh-shop-logo.jpg",   alt: "Mái hiên cửa hàng",            label: "Mái Hiên Cửa Hàng"    },
-  { src: "/products/mai-hien-quan-hai-san.jpg",     alt: "Mái hiên quán hải sản",        label: "Mái Hiên Quán Ăn"     },
-  { src: "/products/cua-cuon-xam-biet-thu.jpg",     alt: "Cửa cuốn biệt thự",            label: "Cửa Cuốn Biệt Thự"   },
-  { src: "/products/cua-cuon-xanh-la.jpg",          alt: "Cửa cuốn xanh lá",             label: "Cửa Cuốn Màu Xanh"   },
-  { src: "/products/cua-cuon-vang-shop.jpg",        alt: "Cửa cuốn vàng cửa hàng",       label: "Cửa Cuốn Cửa Hàng"   },
-  { src: "/products/cua-cuon-thong-gio.jpg",        alt: "Cửa cuốn thông gió",           label: "Cửa Cuốn Thông Gió"  },
-  { src: "/products/mai-che-hanh-lang-nha-may.jpg", alt: "Mái che hành lang nhà máy",    label: "Mái Che Nhà Máy"      },
+  { src: "/products/mai-xep-san-tennis.jpg",       alt: "Thi công mái xếp sân tennis tại Bình Dương",          label: "Mái Xếp Sân Tennis"   },
+  { src: "/products/mai-xep-ho-boi.jpg",            alt: "Mái xếp che hồ bơi xanh dương tại TP.HCM",              label: "Mái Xếp Hồ Bơi"       },
+  { src: "/products/mai-xep-nhieu-tang-nha-pho.jpg",alt: "Mái xếp di động nhà phố nhiều tầng",  label: "Mái Xếp Nhà Phố"      },
+  { src: "/products/mai-xep-nha-hang-dem.jpg",      alt: "Mái xếp nhà hàng ban đêm Linh Khương",    label: "Mái Xếp Nhà Hàng"     },
+  { src: "/products/mai-hien-nau-nha-pho-logo.jpg", alt: "Thi công mái hiên nhà phố tại Bình Dương",             label: "Mái Hiên Nhà Phố"     },
+  { src: "/products/mai-hien-xanh-shop-logo.jpg",   alt: "Mái hiên cửa hàng có logo Linh Khương",            label: "Mái Hiên Cửa Hàng"    },
+  { src: "/products/mai-hien-quan-hai-san.jpg",     alt: "Mái hiên quán hải sản Thanh Xuân",        label: "Mái Hiên Quán Ăn"     },
+  { src: "/products/cua-cuon-xam-biet-thu.jpg",     alt: "Cửa cuốn xám biệt thự sạch đẹp",            label: "Cửa Cuốn Biệt Thự"   },
+  { src: "/products/cua-cuon-xanh-la.jpg",          alt: "Cửa cuốn màu xanh lá nổi bật",             label: "Cửa Cuốn Màu Xanh"   },
+  { src: "/products/cua-cuon-vang-shop.jpg",        alt: "Cửa cuốn vàng shop cửa hàng",       label: "Cửa Cuốn Cửa Hàng"   },
+  { src: "/products/cua-cuon-thong-gio.jpg",        alt: "Cửa cuốn thông gió lắp đặt tại TP.HCM",           label: "Cửa Cuốn Thông Gió"  },
+  { src: "/products/mai-che-hanh-lang-nha-may.jpg", alt: "Mái che hành lang nhà máy khu công nghiệp",    label: "Mái Che Nhà Máy"      },
 ];
 
 const ZOOM_LEVELS = [1, 1.5, 2, 3];

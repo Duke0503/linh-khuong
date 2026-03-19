@@ -15,7 +15,7 @@ export const siteConfig = {
     zaloHref: "https://zalo.me/0962568910",
     facebook: "https://www.facebook.com/profile.php?id=61587717441680",
     address: "126/22 Liên Huyện, Tân Hiệp, Phường Tân Đông Hiệp, TP. Dĩ An, Bình Dương",
-    geo: { lat: "10.9582355", lng: "106.7489423" },
+    geo: { lat: "10.959127", lng: "106.749853" },
   },
 
   analytics: {

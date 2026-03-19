@@ -165,14 +165,14 @@ export default function ContactSection() {
             </a>
 
             <a
-              href={`https://www.google.com/maps?q=${siteConfig.contact.geo.lat},${siteConfig.contact.geo.lng}`}
+              href="https://www.google.com/maps?q=10.959127,106.749853"
               target="_blank"
               rel="noopener noreferrer"
               className="block rounded-2xl overflow-hidden shadow-md h-52 md:h-56 relative group"
               title="Xem trên Google Maps"
             >
               <iframe
-                src="https://maps.google.com/maps?q=10.9582355,106.7489423&z=18&output=embed&hl=vi"
+                src="https://maps.google.com/maps?q=10.959127,106.749853&z=18&output=embed&hl=vi"
                 width="100%"
                 height="100%"
                 style={{ border: 0, pointerEvents: "none" }}
