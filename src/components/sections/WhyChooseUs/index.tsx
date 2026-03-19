@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
           />
         </RevealWrapper>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
           {/* Left — first 3 reasons */}
           <div className="space-y-6">
             {REASONS.slice(0, 3).map((r, i) => (
@@ -29,8 +29,8 @@ export default function WhyChooseUs() {
             ))}
           </div>
 
-          {/* Center image */}
-          <RevealWrapper direction="up" delay={1}>
+          {/* Center image — ẩn trên mobile, hiện từ lg */}
+          <RevealWrapper direction="up" delay={1} className="hidden lg:block">
             <div className="relative flex justify-center">
               <div className="relative w-full max-w-sm aspect-square">
                 <div className="absolute inset-0 bg-[#1e4d8c]/10 rounded-3xl rotate-6" />

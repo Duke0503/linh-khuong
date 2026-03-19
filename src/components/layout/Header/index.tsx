@@ -10,9 +10,22 @@ import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20);
+
+      // Highlight active nav item based on scroll position
+      const sectionIds = NAV_ITEMS.map((i) => i.href.replace("#", ""));
+      for (const id of [...sectionIds].reverse()) {
+        const el = document.getElementById(id);
+        if (el && window.scrollY >= el.offsetTop - 120) {
+          setActiveSection(id);
+          break;
+        }
+      }
+    };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
@@ -46,23 +59,32 @@ export default function Header() {
 
         {/* Desktop navigation */}
         <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
-          {NAV_ITEMS.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              onClick={(e) => handleNav(e, item.href)}
-              className="px-3 py-2 text-sm font-medium rounded-md text-gray-700 hover:text-[#1e4d8c] hover:bg-blue-50 transition-colors"
-            >
-              {item.label}
-            </a>
-          ))}
+          {NAV_ITEMS.map((item) => {
+            const id = item.href.replace("#", "");
+            const isActive = activeSection === id;
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={(e) => handleNav(e, item.href)}
+                className={cn(
+                  "px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                  isActive
+                    ? "text-[#1e4d8c] bg-blue-50 font-semibold"
+                    : "text-gray-700 hover:text-[#1e4d8c] hover:bg-blue-50"
+                )}
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </nav>
 
         {/* Right actions */}
         <div className="flex items-center gap-3">
           <a
             href={siteConfig.contact.phoneHref}
-            className="hidden md:flex items-center gap-2 bg-[#1e4d8c] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#153870] transition-colors"
+            className="hidden md:flex items-center gap-2 bg-[#1e4d8c] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-brand-navy-dark transition-colors"
           >
             <Phone className="w-4 h-4" />
             {siteConfig.contact.phone}

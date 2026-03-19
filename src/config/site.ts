@@ -26,24 +26,26 @@ export const siteConfig = {
     title: "Mái Hiên Mái Xếp Linh Khương | Thi Công Mái Che Uy Tín Tại TP.HCM",
     titleTemplate: "%s | Mái Hiên Mái Xếp Linh Khương",
     description:
-      "Chuyên tư vấn, thiết kế và thi công mái hiên, mái xếp di động, dù che nắng, mái vòm, cửa cuốn, cửa kéo tại TP.HCM và các tỉnh lân cận. Uy tín – Chất lượng – Bảo hành rõ ràng. Hotline: 0972677687",
+      "Chuyên thi công mái hiên, mái xếp di động tại TP.HCM. Uy tín – Chất lượng – Bảo hành rõ ràng. Tư vấn miễn phí, báo giá nhanh. Hotline: 0962568910",
     keywords: [
       "mái hiên",
       "mái xếp",
       "mái xếp di động",
+      "thi công mái hiên tphcm",
+      "mái hiên giá rẻ",
+      "báo giá mái hiên",
       "dù che nắng",
       "mái vòm",
       "cửa cuốn",
       "cửa kéo",
       "thi công mái che",
-      "Linh Khương",
-      "TP.HCM",
       "mái che quán cà phê",
       "mái che nhà hàng",
+      "Linh Khương",
+      "cơ khí Linh Khương",
+      "TP.HCM",
     ],
-    ogImage:
-      "http://maihienngoctruc.com/thumbs/1920x920x1/upload/photo/z752373709798756f60bb09fe4cfb00416aa63a7fc78e6-1770783791.jpg.webp",
-    // TODO: replace ogImage with hosted version after deploy
+    ogImage: "/banner_lk.png",
   },
 } as const;
 

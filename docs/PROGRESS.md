@@ -9,11 +9,11 @@
 
 ```
 Phase 1 — Nền tảng & Animation    [ 3 / 3 ]  ██████████  100%
-Phase 2 — UX & Responsive          [ 0 / 2 ]  ░░░░░░░░░░  0%
-Phase 3 — SEO & Conversion         [ 0 / 2 ]  ░░░░░░░░░░  0%
-Phase 4 — Final                    [ 0 / 1 ]  ░░░░░░░░░░  0%
+Phase 2 — UX & Responsive          [ 2 / 2 ]  ██████████  100%
+Phase 3 — SEO & Conversion         [ 2 / 2 ]  ██████████  100%
+Phase 4 — Final                    [ 1 / 1 ]  ██████████  100%
 ─────────────────────────────────────────────────────────
-TỔNG                               [ 3 / 8 ]  ███░░░░░░░  38%
+TỔNG                               [ 8 / 8 ]  ██████████  100%
 ```
 
 ---
@@ -63,7 +63,8 @@ TỔNG                               [ 3 / 8 ]  ███░░░░░░░  
 ### Phase 2 — UX & Responsive
 
 #### STEP 4 — Audit & fix responsive toàn trang
-- **Status**: `[ ] pending`
+- **Status**: `[x] done`
+- **Completed**: 2026-03-19
 - **Mục tiêu**: Mọi section hoạt động tốt ở 375px, 768px, 1280px
 - **Files**: Tất cả section components
 - **Kiểm tra**: Chrome DevTools responsive mode — 3 breakpoints
@@ -72,7 +73,8 @@ TỔNG                               [ 3 / 8 ]  ███░░░░░░░  
 ---
 
 #### STEP 5 — Update Footer: anchor links + dọn dẹp
-- **Status**: `[ ] pending`
+- **Status**: `[x] done`
+- **Completed**: 2026-03-19
 - **Mục tiêu**: Footer dùng anchor links thay route links
 - **Files sẽ sửa**:
   - `src/components/layout/Footer/index.tsx`
@@ -84,7 +86,8 @@ TỔNG                               [ 3 / 8 ]  ███░░░░░░░  
 ### Phase 3 — SEO & Conversion
 
 #### STEP 6 — SEO: meta tags, structured data, content keywords
-- **Status**: `[ ] pending`
+- **Status**: `[x] done`
+- **Completed**: 2026-03-19
 - **Mục tiêu**: On-page SEO chuẩn, structured data đầy đủ
 - **Files sẽ sửa**:
   - `src/app/layout.tsx`
@@ -95,7 +98,8 @@ TỔNG                               [ 3 / 8 ]  ███░░░░░░░  
 ---
 
 #### STEP 7 — Nâng cấp FloatActions
-- **Status**: `[ ] pending`
+- **Status**: `[x] done`
+- **Completed**: 2026-03-19
 - **Mục tiêu**: Mobile sticky bar bottom, desktop floating buttons với tooltip
 - **Files sẽ sửa**:
   - `src/components/common/FloatActions/index.tsx`
@@ -107,7 +111,8 @@ TỔNG                               [ 3 / 8 ]  ███░░░░░░░  
 ### Phase 4 — Final
 
 #### STEP 8 — Performance & final check
-- **Status**: `[ ] pending` _(blocked by tất cả steps trên)_
+- **Status**: `[x] done`
+- **Completed**: 2026-03-19
 - **Mục tiêu**: Build pass, lint pass, visual QA toàn trang
 - **Checklist**:
   - [ ] `pnpm build` — không error

@@ -35,7 +35,7 @@ export default function ServicesSection() {
                 <div
                   key={s.title}
                   className="embla__slide"
-                  style={{ flex: "0 0 calc(50% - 8px)", minWidth: 0 }}
+                  style={{ flex: "0 0 min(calc(50% - 8px), 260px)", minWidth: 0 }}
                 >
                   <ServiceCard service={s} sizes="50vw" />
                 </div>

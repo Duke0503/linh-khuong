@@ -1,9 +1,16 @@
-import Link from "next/link";
+"use client";
+
 import Image from "next/image";
 import { Phone, Mail, MapPin, Facebook } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { NAV_ITEMS } from "@/constants/navigation";
 import { SERVICES } from "@/constants/services";
+
+function scrollTo(href: string) {
+  const id = href.replace("#", "");
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+}
 
 export default function Footer() {
   return (
@@ -41,13 +48,14 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             {NAV_ITEMS.map((item) => (
               <li key={item.label}>
-                <Link
+                <a
                   href={item.href}
-                  className="hover:text-[#1e4d8c] transition-colors flex items-center gap-2"
+                  onClick={(e) => { e.preventDefault(); scrollTo(item.href); }}
+                  className="hover:text-[#1e4d8c] transition-colors flex items-center gap-2 cursor-pointer"
                 >
                   <span className="text-[#1e4d8c]">›</span>
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -62,9 +70,13 @@ export default function Footer() {
             {SERVICES.map((s) => (
               <li key={s.title} className="flex items-start gap-2">
                 <span className="text-[#1e4d8c] mt-0.5">›</span>
-                <Link href={s.href} className="hover:text-[#1e4d8c] transition-colors">
+                <a
+                  href="#dich-vu"
+                  onClick={(e) => { e.preventDefault(); scrollTo("#dich-vu"); }}
+                  className="hover:text-[#1e4d8c] transition-colors cursor-pointer"
+                >
                   {s.title}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -110,8 +122,8 @@ export default function Footer() {
 
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
-          <p>© 2024 {siteConfig.fullName}. All rights reserved.</p>
-          <p>Thiết kế: Linh Khương Team</p>
+          <p>© 2025 {siteConfig.fullName}. All rights reserved.</p>
+          <p>Thiết kế bởi Linh Khương Team</p>
         </div>
       </div>
     </footer>

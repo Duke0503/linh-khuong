@@ -57,7 +57,7 @@ export default function AboutSection() {
 
           {/* Images */}
           <RevealWrapper direction="right" delay={1}>
-            <div className="relative grid grid-cols-2 gap-4">
+            <div className="relative grid grid-cols-2 gap-4 pb-6">
               <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4]">
                 <Image
                   src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab2-1770360916-1770567529.png.webp"

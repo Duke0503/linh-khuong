@@ -164,7 +164,7 @@ export default function ContactSection() {
               </div>
             </a>
 
-            <div className="rounded-2xl overflow-hidden shadow-md h-48">
+            <div className="rounded-2xl overflow-hidden shadow-md h-52 md:h-48">
               <iframe
                 src={`https://maps.google.com/maps?q=${siteConfig.contact.geo.lat},${siteConfig.contact.geo.lng}&z=15&output=embed`}
                 width="100%"

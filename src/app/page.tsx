@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="pt-[72px]">
+      <main className="pt-[80px] pb-[64px] lg:pb-0">
         <div id="hero"><HeroSlider /></div>
         <div id="gioi-thieu"><AboutSection /></div>
         <div id="dich-vu"><ServicesSection /></div>

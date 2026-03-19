@@ -54,7 +54,7 @@ export default function BeforeAfterSection() {
           onTouchMove={onTouchMove}
         >
           {/* After image (full width, bottom layer) */}
-          <div className="relative w-full aspect-[3/1] min-h-[180px]">
+          <div className="relative w-full aspect-[2/1] md:aspect-[3/1] min-h-[200px]">
             <Image
               src="http://maihienngoctruc.com/thumbs/1200x415x1/upload/news/after-1770887971.png.webp"
               alt="Sau thi công"
