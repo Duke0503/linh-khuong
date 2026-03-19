@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
                 <div className="absolute inset-0 bg-[#1e4d8c]/10 rounded-3xl rotate-6" />
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <Image
-                    src="/cuahang.png"
+                    src="/cuahang.jpg"
                     alt={`Cửa hàng ${siteConfig.name}`}
                     width={400}
                     height={400}
