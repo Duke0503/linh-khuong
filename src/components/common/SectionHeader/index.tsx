@@ -32,7 +32,7 @@ export default function SectionHeader({
         {title}
       </h2>
       {subtitle && (
-        <p className={`mt-2 text-sm md:text-base ${light ? "text-white/70" : "text-gray-500"}`}>
+        <p className={`mt-2 text-sm md:text-base ${light ? "text-white/90" : "text-gray-500"}`}>
           {subtitle}
         </p>
       )}

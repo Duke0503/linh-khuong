@@ -48,14 +48,14 @@ export default function TestimonialsSection() {
           </div>
           <button
             onClick={scrollPrev}
-            className="absolute -left-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-colors"
+            className="absolute -left-2 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-100 text-[#1e4d8c] p-2 rounded-full transition-colors shadow-md"
             aria-label="Trước"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={scrollNext}
-            className="absolute -right-2 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-colors"
+            className="absolute -right-2 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-100 text-[#1e4d8c] p-2 rounded-full transition-colors shadow-md"
             aria-label="Sau"
           >
             <ChevronRight className="w-5 h-5" />

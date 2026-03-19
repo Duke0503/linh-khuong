@@ -30,7 +30,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
         </div>
         <div>
           <div className="font-bold text-white text-sm">{testimonial.name}</div>
-          <div className="text-white/70 text-xs">{testimonial.role}</div>
+          <div className="text-white/90 text-xs">{testimonial.role}</div>
         </div>
       </div>
     </div>

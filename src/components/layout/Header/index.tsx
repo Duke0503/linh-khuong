@@ -6,7 +6,6 @@ import { Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS } from "@/constants/navigation";
 import { siteConfig } from "@/config/site";
-import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -82,14 +81,23 @@ export default function Header() {
 
         {/* Right actions */}
         <div className="flex items-center gap-3">
+          {/* Mobile: icon-only call button */}
           <a
             href={siteConfig.contact.phoneHref}
-            className="hidden md:flex items-center gap-2 bg-[#1e4d8c] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-brand-navy-dark transition-colors"
+            className="lg:hidden flex items-center gap-1.5 bg-[#1e4d8c] text-white px-3 py-2 rounded-full text-xs font-semibold"
+            aria-label={`Gọi ngay ${siteConfig.contact.phone}`}
+          >
+            <Phone className="w-3.5 h-3.5" />
+            Gọi ngay
+          </a>
+          {/* Desktop: full phone number */}
+          <a
+            href={siteConfig.contact.phoneHref}
+            className="hidden lg:flex items-center gap-2 bg-[#1e4d8c] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#153870] transition-colors"
           >
             <Phone className="w-4 h-4" />
             {siteConfig.contact.phone}
           </a>
-          <MobileMenu onNav={handleNav} />
         </div>
       </div>
     </header>

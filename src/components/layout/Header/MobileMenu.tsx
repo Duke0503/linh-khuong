@@ -22,7 +22,7 @@ export default function MobileMenu({ onNav }: MobileMenuProps) {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger
-        className="lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors"
+        className={`lg:hidden p-2 rounded-md hover:bg-gray-100 transition-colors ${open ? "invisible" : ""}`}
         aria-label="Mở menu"
       >
         <svg className="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">

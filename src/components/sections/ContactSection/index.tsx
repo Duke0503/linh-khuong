@@ -121,7 +121,7 @@ export default function ContactSection() {
                 <Button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#1e4d8c] hover:bg-[#153870] text-white py-3 rounded-xl font-semibold text-base"
+                  className="w-full bg-[#1e4d8c] hover:bg-[#153870] text-white py-5 rounded-xl font-semibold text-xl"
                 >
                   {loading ? "Đang gửi..." : "Gửi ngay"}
                 </Button>
@@ -138,15 +138,15 @@ export default function ContactSection() {
               <div className="space-y-4">
                 <a href={siteConfig.contact.phoneHref} className="flex items-center gap-4 hover:opacity-80 transition-opacity">
                   <div className="bg-white/20 p-3 rounded-full"><Phone className="w-5 h-5" /></div>
-                  <div><div className="text-xs opacity-80">Hotline</div><div className="font-bold">{siteConfig.contact.phone}</div></div>
+                  <div><div className="text-xs opacity-90">Hotline</div><div className="font-bold">{siteConfig.contact.phone}</div></div>
                 </a>
                 <a href={siteConfig.contact.emailHref} className="flex items-center gap-4 hover:opacity-80 transition-opacity">
                   <div className="bg-white/20 p-3 rounded-full"><Mail className="w-5 h-5" /></div>
-                  <div><div className="text-xs opacity-80">Email</div><div className="font-semibold">{siteConfig.contact.email}</div></div>
+                  <div><div className="text-xs opacity-90">Email</div><div className="font-semibold">{siteConfig.contact.email}</div></div>
                 </a>
                 <div className="flex items-start gap-4">
                   <div className="bg-white/20 p-3 rounded-full flex-shrink-0"><MapPin className="w-5 h-5" /></div>
-                  <div><div className="text-xs opacity-80">Địa chỉ</div><div className="font-semibold">{siteConfig.contact.address}</div></div>
+                  <div><div className="text-xs opacity-90">Địa chỉ</div><div className="font-semibold">{siteConfig.contact.address}</div></div>
                 </div>
               </div>
             </div>
