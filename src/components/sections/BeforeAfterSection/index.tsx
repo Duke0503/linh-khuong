@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback } from "react";
 import Image from "next/image";
+import RevealWrapper from "@/components/common/RevealWrapper";
 
 export default function BeforeAfterSection() {
   const [sliderPos, setSliderPos] = useState(50);
@@ -28,7 +29,7 @@ export default function BeforeAfterSection() {
   return (
     <section className="py-14 md:py-20 bg-gray-900" aria-label="Trước và sau thi công">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-10">
+        <RevealWrapper direction="up" className="text-center mb-10">
           <p className="text-[#f59e0b] text-sm font-semibold uppercase tracking-widest mb-2">
             Kết quả thực tế
           </p>
@@ -39,7 +40,7 @@ export default function BeforeAfterSection() {
             Kéo thanh trượt để so sánh — Chuyên nghiệp – Chất lượng – Uy tín
           </p>
           <div className="w-16 h-1 bg-[#1e4d8c] rounded-full mx-auto mt-3" />
-        </div>
+        </RevealWrapper>
 
         {/* Before/After Slider */}
         <div

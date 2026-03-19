@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Facebook, Send, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import SectionHeader from "@/components/common/SectionHeader";
+import RevealWrapper from "@/components/common/RevealWrapper";
 
 interface FormState {
   name: string;
@@ -43,6 +44,7 @@ export default function ContactSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           {/* Contact form */}
+          <RevealWrapper direction="left">
           <div className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-sm">
             <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
               <Send className="w-5 h-5 text-[#1e4d8c]" />
@@ -126,8 +128,10 @@ export default function ContactSection() {
               </form>
             )}
           </div>
+          </RevealWrapper>
 
           {/* Info + socials */}
+          <RevealWrapper direction="right" delay={1}>
           <div className="space-y-6">
             <div className="bg-gradient-to-br from-[#1e4d8c] to-[#153870] rounded-2xl p-6 text-white">
               <h3 className="text-xl font-bold mb-5">Thông Tin Liên Hệ</h3>
@@ -171,6 +175,7 @@ export default function ContactSection() {
               />
             </div>
           </div>
+          </RevealWrapper>
         </div>
       </div>
     </section>

@@ -6,6 +6,7 @@ import { Play } from "lucide-react";
 import { VIDEOS } from "@/constants/videos";
 import SectionHeader from "@/components/common/SectionHeader";
 import VideoThumb from "./VideoThumb";
+import RevealWrapper from "@/components/common/RevealWrapper";
 
 export default function VideoSection() {
   const [activeIdx, setActiveIdx] = useState(0);
@@ -21,14 +22,16 @@ export default function VideoSection() {
   return (
     <section className="py-14 md:py-20 bg-gray-50" aria-label="Video thực tế">
       <div className="max-w-7xl mx-auto px-4">
-        <SectionHeader
-          eyebrow="Thực tế công trình"
-          title="Video Thi Công Thực Tế"
-        />
+        <RevealWrapper direction="up">
+          <SectionHeader
+            eyebrow="Thực tế công trình"
+            title="Video Thi Công Thực Tế"
+          />
+        </RevealWrapper>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Main video player */}
-          <div className="lg:col-span-2">
+          <RevealWrapper direction="left" delay={1} className="lg:col-span-2">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-video bg-black">
               {playing ? (
                 <iframe
@@ -60,10 +63,10 @@ export default function VideoSection() {
                 </>
               )}
             </div>
-          </div>
+          </RevealWrapper>
 
           {/* Thumbnail list */}
-          <div className="flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
+          <RevealWrapper direction="right" delay={2} className="flex flex-row lg:flex-col gap-3 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0">
             {VIDEOS.map((v, i) => (
               <VideoThumb
                 key={v.id}
@@ -72,7 +75,7 @@ export default function VideoSection() {
                 onClick={() => handleSelect(i)}
               />
             ))}
-          </div>
+          </RevealWrapper>
         </div>
       </div>
     </section>

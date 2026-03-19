@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { SERVICES } from "@/constants/services";
 import SectionHeader from "@/components/common/SectionHeader";
 import ServiceCard from "./ServiceCard";
+import RevealWrapper from "@/components/common/RevealWrapper";
 
 export default function ServicesSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
@@ -19,13 +20,15 @@ export default function ServicesSection() {
   return (
     <section className="py-14 md:py-20 bg-gray-50" aria-label="Dịch vụ chính">
       <div className="max-w-7xl mx-auto px-4">
-        <SectionHeader
-          eyebrow="Chuyên nghiệp – Chất lượng – Uy tín"
-          title="Dịch Vụ Chính"
-        />
+        <RevealWrapper direction="up">
+          <SectionHeader
+            eyebrow="Chuyên nghiệp – Chất lượng – Uy tín"
+            title="Dịch Vụ Chính"
+          />
+        </RevealWrapper>
 
         {/* Mobile / tablet carousel */}
-        <div className="relative lg:hidden">
+        <RevealWrapper direction="up" delay={1} className="relative lg:hidden">
           <div className="embla" ref={emblaRef}>
             <div className="embla__container" style={{ gap: "16px" }}>
               {SERVICES.map((s) => (
@@ -53,12 +56,18 @@ export default function ServicesSection() {
           >
             <ChevronRight className="w-5 h-5" />
           </button>
-        </div>
+        </RevealWrapper>
 
         {/* Desktop grid */}
         <div className="hidden lg:grid lg:grid-cols-4 gap-6">
-          {SERVICES.map((s) => (
-            <ServiceCard key={s.title} service={s} sizes="25vw" />
+          {SERVICES.map((s, i) => (
+            <RevealWrapper
+              key={s.title}
+              direction="up"
+              delay={(i % 4) as 0 | 1 | 2 | 3 | 4}
+            >
+              <ServiceCard service={s} sizes="25vw" />
+            </RevealWrapper>
           ))}
         </div>
       </div>

@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { TESTIMONIALS } from "@/constants/testimonials";
 import SectionHeader from "@/components/common/SectionHeader";
 import TestimonialCard from "./TestimonialCard";
+import RevealWrapper from "@/components/common/RevealWrapper";
 
 export default function TestimonialsSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -21,6 +22,7 @@ export default function TestimonialsSection() {
       aria-label="Đánh giá khách hàng"
     >
       <div className="max-w-7xl mx-auto px-4">
+        <RevealWrapper direction="up">
         <SectionHeader
           eyebrow="Khách hàng nói gì"
           title={
@@ -31,6 +33,7 @@ export default function TestimonialsSection() {
           }
           light
         />
+        </RevealWrapper>
 
         {/* Mobile: carousel */}
         <div className="relative lg:hidden">

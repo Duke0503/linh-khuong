@@ -8,11 +8,11 @@ export const siteConfig = {
   logo: "/logo.jpg",
 
   contact: {
-    phone: "0972677687",
-    phoneHref: "tel:0972677687",
+    phone: "0962568910",
+    phoneHref: "tel:0962568910",
     email: "linhkhuong@gmail.com",
     emailHref: "mailto:linhkhuong@gmail.com",
-    zaloHref: "https://zalo.me/0972677687",
+    zaloHref: "https://zalo.me/0962568910",
     facebook: "https://www.facebook.com/profile.php?id=61587717441680",
     address: "TP. Hồ Chí Minh và các tỉnh lân cận",
     geo: { lat: "10.823099", lng: "106.629664" },

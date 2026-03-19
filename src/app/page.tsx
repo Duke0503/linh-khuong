@@ -8,23 +8,21 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import BeforeAfterSection from "@/components/sections/BeforeAfterSection";
 import VideoSection from "@/components/sections/VideoSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
-import NewsSection from "@/components/sections/NewsSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="pt-[88px] md:pt-[112px]">
-        <HeroSlider />
-        <AboutSection />
-        <ServicesSection />
+      <main className="pt-[72px]">
+        <div id="hero"><HeroSlider /></div>
+        <div id="gioi-thieu"><AboutSection /></div>
+        <div id="dich-vu"><ServicesSection /></div>
         <WhyChooseUs />
-        <BeforeAfterSection />
+        <div id="du-an"><BeforeAfterSection /></div>
         <VideoSection />
         <TestimonialsSection />
-        <NewsSection />
-        <ContactSection />
+        <div id="lien-he"><ContactSection /></div>
       </main>
       <Footer />
       <FloatActions />

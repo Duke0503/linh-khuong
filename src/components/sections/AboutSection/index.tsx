@@ -1,6 +1,7 @@
+import { CheckCircle, Phone } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Phone, CheckCircle } from "lucide-react";
+import { siteConfig } from "@/config/site";
+import RevealWrapper from "@/components/common/RevealWrapper";
 
 export default function AboutSection() {
   const highlights = [
@@ -15,7 +16,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Content */}
-          <div>
+          <RevealWrapper direction="left">
             <p className="text-[#1e4d8c] text-sm font-semibold uppercase tracking-widest mb-2">
               Đôi nét về
             </p>
@@ -25,7 +26,7 @@ export default function AboutSection() {
             </h2>
             <div className="w-16 h-1 bg-[#1e4d8c] rounded-full mb-6" />
 
-            <div className="bg-gradient-to-br from-white to-red-50 border-l-4 border-[#1e4d8c] rounded-xl p-5 md:p-6 shadow-sm mb-6">
+            <div className="bg-gradient-to-br from-white to-blue-50 border-l-4 border-[#1e4d8c] rounded-xl p-5 md:p-6 shadow-sm mb-6">
               <p className="text-gray-700 leading-relaxed text-base">
                 <strong className="text-[#f59e0b]">Mái Hiên Mái Xếp Linh Khương</strong> là đơn vị
                 chuyên tư vấn, thiết kế và thi công các loại mái hiên, mái xếp che nắng mưa
@@ -45,50 +46,43 @@ export default function AboutSection() {
               ))}
             </ul>
 
-            <div className="flex flex-wrap gap-3">
-              <Link
-                href="/gioi-thieu"
-                className="inline-flex items-center gap-2 bg-[#1e4d8c] text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-[#153870] transition-colors shadow-md"
-              >
-                Xem thêm
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-              <a
-                href="tel:0972677687"
-                className="inline-flex items-center gap-2 border-2 border-[#1e4d8c] text-[#1e4d8c] px-6 py-3 rounded-full font-semibold text-sm hover:bg-[#1e4d8c] hover:text-white transition-colors"
-              >
-                <Phone className="w-4 h-4" />
-                0972677687
-              </a>
-            </div>
-          </div>
+            <a
+              href={siteConfig.contact.phoneHref}
+              className="inline-flex items-center gap-2 bg-[#1e4d8c] text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-[#153870] transition-colors shadow-md"
+            >
+              <Phone className="w-4 h-4" />
+              Gọi ngay: {siteConfig.contact.phone}
+            </a>
+          </RevealWrapper>
 
           {/* Images */}
-          <div className="relative grid grid-cols-2 gap-4">
-            <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4]">
-              <Image
-                src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab2-1770360916-1770567529.png.webp"
-                alt="Mái hiên mái xếp Linh Khương"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
+          <RevealWrapper direction="right" delay={1}>
+            <div className="relative grid grid-cols-2 gap-4">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4]">
+                <Image
+                  src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab2-1770360916-1770567529.png.webp"
+                  alt="Mái hiên mái xếp Linh Khương"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4] mt-6">
+                <Image
+                  src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab1-1770360916-1770567529.png.webp"
+                  alt="Thi công mái che chuyên nghiệp"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
+              </div>
+              {/* Floating badge */}
+              <div className="absolute -bottom-4 -left-4 bg-[#1e4d8c] text-white rounded-2xl p-4 shadow-xl">
+                <div className="text-2xl font-bold">10+</div>
+                <div className="text-xs opacity-90">Năm kinh nghiệm</div>
+              </div>
             </div>
-            <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4] mt-6">
-              <Image
-                src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab1-1770360916-1770567529.png.webp"
-                alt="Thi công mái che chuyên nghiệp"
-                fill
-                className="object-cover hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 768px) 50vw, 25vw"
-              />
-            </div>
-            {/* Floating badge */}
-            <div className="absolute -bottom-4 -left-4 bg-[#1e4d8c] text-white rounded-2xl p-4 shadow-xl">
-              <div className="text-2xl font-bold">10+</div>
-              <div className="text-xs opacity-90">Năm kinh nghiệm</div>
-            </div>
-          </div>
+          </RevealWrapper>
         </div>
       </div>
     </section>
