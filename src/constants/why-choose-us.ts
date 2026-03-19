@@ -4,7 +4,7 @@ export const REASONS: Reason[] = [
   {
     icon: "http://maihienngoctruc.com/thumbs/45x50x2/upload/news/vs5-1770370757.png.webp",
     title: "10+ Năm Kinh Nghiệm Thực Chiến",
-    desc: "Hơn 500 công trình đã thi công tại TP.HCM — không phải lời hứa, là hình ảnh thực tế.",
+    desc: "500+ công trình tại TP.HCM, Bình Dương, Đồng Nai — không phải lời hứa, là hình ảnh thực tế có thể xem tận mắt.",
   },
   {
     icon: "http://maihienngoctruc.com/thumbs/45x50x2/upload/news/vs4-1770370742.png.webp",
@@ -18,8 +18,8 @@ export const REASONS: Reason[] = [
   },
   {
     icon: "http://maihienngoctruc.com/thumbs/45x50x2/upload/news/vs2-1770370691.png.webp",
-    title: "Vật Liệu Chính Hãng, Bền 5–10 Năm",
-    desc: "Chỉ dùng vật liệu đạt chuẩn, chịu nhiệt, chịu mưa nắng nhiệt đới — không dùng hàng rẻ tiền.",
+    title: "Vật Liệu Happadoor · 3 Công Nghệ",
+    desc: "Sản phẩm Happadoor chính hãng có CO/CQ. 3 dòng công nghệ Đức · Đài Loan · Úc — phù hợp mọi ngân sách, không hàng trôi nổi.",
   },
   {
     icon: "http://maihienngoctruc.com/thumbs/45x50x2/upload/news/vs1-1770370667.png.webp",

@@ -12,7 +12,7 @@ export default function ServiceCard({ service, sizes = "25vw" }: ServiceCardProp
   return (
     <Link
       href={service.href}
-      className="group block bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 h-full"
+      className="group block bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-[#1e4d8c]/40 shadow-md hover:shadow-xl transition-all duration-300 h-full"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image

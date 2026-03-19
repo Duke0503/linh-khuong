@@ -5,11 +5,11 @@ import RevealWrapper from "@/components/common/RevealWrapper";
 
 export default function AboutSection() {
   const highlights = [
-    "Hơn 10 năm kinh nghiệm — 500+ công trình thực tế tại TP.HCM",
-    "Thợ lành nghề, thi công đúng kỹ thuật, dọn sạch sau khi xong",
-    "Vật liệu chính hãng, chịu thời tiết nhiệt đới, bền 5–10 năm",
-    "Bảo hành bằng hợp đồng — có vấn đề gọi là có người trong 24h",
-    "Khảo sát tận nơi & báo giá miễn phí — không ép mua, không phát sinh",
+    "10+ năm · 500+ công trình · TP.HCM · Bình Dương · Đồng Nai",
+    "Kỹ thuật viên trực tiếp thi công — không qua thầu phụ, bạn trả tiền cho thợ",
+    "Vật liệu Happadoor chính hãng có CO/CQ · Công nghệ Đức · Đài Loan · Úc",
+    "Bảo hành bằng hợp đồng — sự cố có thợ trong 24h, không đổ lỗi",
+    "Khảo sát tận nơi & báo giá miễn phí — không phát sinh, không ép mua",
   ];
 
   return (
@@ -19,23 +19,24 @@ export default function AboutSection() {
           {/* Content */}
           <RevealWrapper direction="left">
             <p className="text-[#1e4d8c] text-sm font-semibold uppercase tracking-widest mb-2">
-              Đôi nét về
+              Về chúng tôi
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight mb-2">
-              MÁI HIÊN MÁI XẾP{" "}
-              <span className="text-[#1e4d8c]">Linh Khương</span>
+              Hơn 10 Năm Tận Tâm —{" "}
+              <span className="text-[#1e4d8c]">Linh Khương</span> Không Bán Lời Hứa
             </h2>
             <div className="w-16 h-1 bg-[#1e4d8c] rounded-full mb-6" />
 
             <div className="bg-gradient-to-br from-white to-blue-50 border-l-4 border-[#1e4d8c] rounded-xl p-5 md:p-6 shadow-sm mb-6">
               <p className="text-gray-700 leading-relaxed text-base">
-                Từ một xưởng cơ khí nhỏ, <strong className="text-[#f59e0b]">Linh Khương</strong> đã
-                phát triển thành đơn vị chuyên thi công{" "}
-                <strong>cửa cuốn, mái hiên, mái xếp</strong> được tin dùng tại TP.HCM với
-                hơn <strong>500 công trình thực tế</strong> — từ nhà ở, quán cà phê đến nhà
-                hàng và nhà máy. Chúng tôi không chỉ thi công rồi đi — mỗi công trình đều
-                được <strong>bảo hành bằng hợp đồng</strong>, thợ có mặt trong 24h khi có
-                sự cố.
+                <strong className="text-[#f59e0b]">Linh Khương</strong> bắt đầu từ một xưởng nhỏ
+                tại Tân Đông Hiệp — nơi chúng tôi tự tay thi công từng công trình đầu tiên.
+                Hơn 10 năm sau, <strong>500+ công trình</strong> hoàn thành tại TP.HCM, Bình
+                Dương và Đồng Nai là minh chứng cho cam kết chúng tôi giữ với từng khách hàng:
+                làm đúng, làm đẹp, chịu trách nhiệm đến cùng.
+                <br /><br />
+                Chúng tôi không làm qua thầu phụ. Mỗi công trình đều do kỹ thuật viên Linh Khương
+                trực tiếp thi công — <strong>bạn trả tiền cho thợ, không trả cho trung gian</strong>.
               </p>
             </div>
 
@@ -62,7 +63,7 @@ export default function AboutSection() {
             <div className="relative grid grid-cols-2 gap-4 pb-6">
               <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4]">
                 <Image
-                  src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab2-1770360916-1770567529.png.webp"
+                  src="/products/mai-xep-nhieu-tang-nha-pho.jpg"
                   alt="Đội thợ thi công mái hiên mái xếp Linh Khương tại TP.HCM"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -71,8 +72,8 @@ export default function AboutSection() {
               </div>
               <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4] mt-6">
                 <Image
-                  src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab1-1770360916-1770567529.png.webp"
-                  alt="Công trình mái xếp di động thi công chuyên nghiệp"
+                  src="/products/cua-cuon-xam-biet-thu.jpg"
+                  alt="Công trình cửa cuốn thi công trực tiếp Linh Khương"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 25vw"

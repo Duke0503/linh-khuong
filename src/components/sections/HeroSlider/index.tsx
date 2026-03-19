@@ -26,6 +26,15 @@ export default function HeroSlider() {
         {/* Gradient overlay phía dưới để button nổi trên ảnh */}
         <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
 
+        {/* Trust badges */}
+        <div className="absolute bottom-16 md:bottom-24 left-1/2 -translate-x-1/2 hidden sm:flex flex-wrap justify-center gap-2">
+          {["Công Nghệ Đức · Đài Loan · Úc", "Điều Khiển Thông Minh", "Bình Lưu Điện", "Happadoor Chính Hãng"].map((badge) => (
+            <span key={badge} className="bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full border border-white/30">
+              {badge}
+            </span>
+          ))}
+        </div>
+
         {/* CTA buttons */}
         <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
           <a
