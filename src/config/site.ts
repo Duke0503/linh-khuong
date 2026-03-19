@@ -14,8 +14,8 @@ export const siteConfig = {
     emailHref: "mailto:linhkhuong@gmail.com",
     zaloHref: "https://zalo.me/0962568910",
     facebook: "https://www.facebook.com/profile.php?id=61587717441680",
-    address: "TP. Hồ Chí Minh và các tỉnh lân cận",
-    geo: { lat: "10.823099", lng: "106.629664" },
+    address: "126/22 Liên Huyện, Tân Hiệp, Phường Tân Đông Hiệp, TP. Dĩ An, Bình Dương",
+    geo: { lat: "10.9582355", lng: "106.7489423" },
   },
 
   analytics: {
@@ -60,7 +60,8 @@ export const structuredData = {
   email: siteConfig.contact.email,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Hồ Chí Minh",
+    streetAddress: "126/22 Liên Huyện, Tân Hiệp",
+    addressLocality: "Tân Đông Hiệp, Dĩ An, Bình Dương",
     addressCountry: "VN",
   },
   geo: {

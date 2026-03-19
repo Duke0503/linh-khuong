@@ -12,6 +12,7 @@ interface RevealWrapperProps {
   delay?: 0 | 1 | 2 | 3 | 4;
   threshold?: number;
   as?: React.ElementType;
+  onClick?: () => void;
 }
 
 export default function RevealWrapper({
@@ -21,6 +22,7 @@ export default function RevealWrapper({
   delay = 0,
   threshold,
   as: Tag = "div",
+  onClick,
 }: RevealWrapperProps) {
   const { ref, inView } = useScrollReveal({ threshold });
 
@@ -37,6 +39,7 @@ export default function RevealWrapper({
     <Tag
       ref={ref}
       className={cn(directionClass, delayClass, inView && "visible", className)}
+      onClick={onClick}
     >
       {children}
     </Tag>

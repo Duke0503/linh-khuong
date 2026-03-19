@@ -164,16 +164,28 @@ export default function ContactSection() {
               </div>
             </a>
 
-            <div className="rounded-2xl overflow-hidden shadow-md h-52 md:h-48">
+            <a
+              href={`https://www.google.com/maps?q=${siteConfig.contact.geo.lat},${siteConfig.contact.geo.lng}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block rounded-2xl overflow-hidden shadow-md h-52 md:h-56 relative group"
+              title="Xem trên Google Maps"
+            >
               <iframe
-                src={`https://maps.google.com/maps?q=${siteConfig.contact.geo.lat},${siteConfig.contact.geo.lng}&z=15&output=embed`}
+                src="https://maps.google.com/maps?q=10.9582355,106.7489423&z=18&output=embed&hl=vi"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
+                style={{ border: 0, pointerEvents: "none" }}
                 loading="lazy"
-                title="Vị trí cửa hàng Linh Khương"
+                title="Vị trí Mái Hiên Mái Xếp Linh Khương"
+                allowFullScreen
               />
-            </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-white text-gray-800 text-xs font-semibold px-3 py-1.5 rounded-full shadow-md">
+                  Mở Google Maps ↗
+                </span>
+              </div>
+            </a>
           </div>
           </RevealWrapper>
         </div>
