@@ -12,7 +12,7 @@
 - **Địa chỉ:** 126/22 Liên Huyện, Tân Đông Hiệp, TP.HCM
 - **Hotline / Zalo:** 0962 568 910
 - **Địa bàn:** TP.HCM · Bình Dương · Đồng Nai
-- **Kinh nghiệm:** 10+ năm, 500+ công trình thực tế
+- **Kinh nghiệm:** 8+ năm, 500+ công trình thực tế
 
 ### Danh Mục Dịch Vụ Đầy Đủ
 

@@ -5,7 +5,7 @@ import RevealWrapper from "@/components/common/RevealWrapper";
 
 export default function AboutSection() {
   const highlights = [
-    "10+ năm · 500+ công trình · TP.HCM · Bình Dương · Đồng Nai",
+    "8+ năm · 500+ công trình · TP.HCM · Bình Dương · Đồng Nai",
     "Kỹ thuật viên trực tiếp thi công — không qua thầu phụ, bạn trả tiền cho thợ",
     "Vật liệu Happadoor chính hãng có CO/CQ · Công nghệ Đức · Đài Loan · Úc",
     "Bảo hành bằng hợp đồng — sự cố có thợ trong 24h, không đổ lỗi",
@@ -22,7 +22,7 @@ export default function AboutSection() {
               Về chúng tôi
             </p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight mb-2">
-              Hơn 10 Năm Tận Tâm —{" "}
+              Hơn 8 Năm Tận Tâm —{" "}
               <span className="text-[#1e4d8c]">Linh Khương</span> Không Bán Lời Hứa
             </h2>
             <div className="w-16 h-1 bg-[#1e4d8c] rounded-full mb-6" />
@@ -31,7 +31,7 @@ export default function AboutSection() {
               <p className="text-gray-700 leading-relaxed text-base">
                 <strong className="text-[#f59e0b]">Linh Khương</strong> bắt đầu từ một xưởng nhỏ
                 tại Tân Đông Hiệp — nơi chúng tôi tự tay thi công từng công trình đầu tiên.
-                Hơn 10 năm sau, <strong>500+ công trình</strong> hoàn thành tại TP.HCM, Bình
+                Hơn 8 năm sau, <strong>500+ công trình</strong> hoàn thành tại TP.HCM, Bình
                 Dương và Đồng Nai là minh chứng cho cam kết chúng tôi giữ với từng khách hàng:
                 làm đúng, làm đẹp, chịu trách nhiệm đến cùng.
                 <br /><br />
@@ -81,7 +81,7 @@ export default function AboutSection() {
               </div>
               {/* Floating badge */}
               <div className="absolute -bottom-4 -left-4 bg-[#1e4d8c] text-white rounded-2xl p-4 shadow-xl">
-                <div className="text-2xl font-bold">10+</div>
+                <div className="text-2xl font-bold">8+</div>
                 <div className="text-xs opacity-90">Năm kinh nghiệm</div>
               </div>
             </div>

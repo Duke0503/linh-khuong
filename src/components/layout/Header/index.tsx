@@ -30,6 +30,7 @@ export default function Header() {
   }, []);
 
   const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!href.startsWith("#")) return; // page links — normal navigation
     e.preventDefault();
     const id = href.replace("#", "");
     const el = document.getElementById(id);

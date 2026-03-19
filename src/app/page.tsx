@@ -2,7 +2,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatActions from "@/components/common/FloatActions";
 import HeroSlider from "@/components/sections/HeroSlider";
-import AboutSection from "@/components/sections/AboutSection";
+import TrustBar from "@/components/common/TrustBar";
 import ServicesSection from "@/components/sections/ServicesSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import BeforeAfterSection from "@/components/sections/BeforeAfterSection";
@@ -16,7 +16,7 @@ export default function HomePage() {
       <Header />
       <main className="pt-[80px]">
         <div id="hero"><HeroSlider /></div>
-        <div id="gioi-thieu"><AboutSection /></div>
+        <TrustBar />
         <div id="dich-vu"><ServicesSection /></div>
         <WhyChooseUs />
         <div id="du-an"><BeforeAfterSection /></div>

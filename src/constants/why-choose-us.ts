@@ -3,7 +3,7 @@ import type { Reason } from "@/types";
 export const REASONS: Reason[] = [
   {
     icon: "http://maihienngoctruc.com/thumbs/45x50x2/upload/news/vs5-1770370757.png.webp",
-    title: "10+ Năm Kinh Nghiệm Thực Chiến",
+    title: "8+ Năm Kinh Nghiệm Thực Chiến",
     desc: "500+ công trình tại TP.HCM, Bình Dương, Đồng Nai — không phải lời hứa, là hình ảnh thực tế có thể xem tận mắt.",
   },
   {
