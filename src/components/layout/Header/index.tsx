@@ -51,7 +51,7 @@ export default function Header() {
             alt={siteConfig.name}
             width={160}
             height={50}
-            className="h-12 w-auto object-contain"
+            className="h-9 lg:h-12 w-auto object-contain max-w-[120px] lg:max-w-none"
             priority
           />
         </a>

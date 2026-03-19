@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
                 <div className="absolute inset-0 bg-[#1e4d8c]/10 rounded-3xl rotate-6" />
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   <Image
-                    src="http://maihienngoctruc.com/upload/photo/cuahang-1770371325.png"
+                    src="/cuahang.png"
                     alt={`Cửa hàng ${siteConfig.name}`}
                     width={400}
                     height={400}
@@ -79,7 +79,7 @@ export default function WhyChooseUs() {
 function ReasonItem({ reason }: { reason: typeof REASONS[0] }) {
   return (
     <div className="flex gap-4 group">
-      <div className="bg-red-50 group-hover:bg-[#1e4d8c] rounded-xl p-3 flex-shrink-0 transition-colors duration-300 h-fit">
+      <div className="bg-blue-50 group-hover:bg-[#1e4d8c] rounded-xl p-3 flex-shrink-0 transition-colors duration-300 h-fit">
         <Image
           src={reason.icon}
           alt={reason.title}

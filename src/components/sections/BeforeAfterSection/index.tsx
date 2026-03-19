@@ -129,11 +129,11 @@ export default function BeforeAfterSection() {
         {/* Carousel */}
         <RevealWrapper direction="up" delay={1} className="relative group">
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-3">
+            <div className="flex">
               {GALLERY.map((item, i) => (
                 <div
                   key={item.src}
-                  className="relative flex-none w-[78vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw] xl:w-[21vw] aspect-[4/3] cursor-zoom-in rounded-xl overflow-hidden shadow-lg"
+                  className="relative flex-none w-[78vw] sm:w-[46vw] md:w-[34vw] lg:w-[26vw] xl:w-[21vw] aspect-[4/3] cursor-zoom-in rounded-xl overflow-hidden shadow-lg mr-3"
                   onClick={() => openLightbox(i)}
                 >
                   <Image

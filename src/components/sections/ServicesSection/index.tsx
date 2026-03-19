@@ -30,12 +30,12 @@ export default function ServicesSection() {
         {/* Mobile / tablet carousel */}
         <RevealWrapper direction="up" delay={1} className="relative lg:hidden">
           <div className="embla" ref={emblaRef}>
-            <div className="embla__container" style={{ gap: "16px" }}>
+            <div className="embla__container">
               {SERVICES.map((s) => (
                 <div
                   key={s.title}
                   className="embla__slide"
-                  style={{ flex: "0 0 min(calc(50% - 8px), 260px)", minWidth: 0 }}
+                  style={{ flex: "0 0 min(50%, 276px)", paddingRight: "16px", minWidth: 0 }}
                 >
                   <ServiceCard service={s} sizes="50vw" />
                 </div>
