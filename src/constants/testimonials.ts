@@ -3,7 +3,7 @@ import type { Testimonial } from "@/types";
 export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Lê Thị Ngọc Ánh",
-    role: "Chủ quán cà phê, Bình Dương",
+    role: "Chủ quán cà phê, TP.HCM",
     avatar: "http://maihienngoctruc.com/thumbs/80x80x1/upload/news/images-1770571269.jpg.webp",
     review:
       "Mái Xếp Linh Khương thi công nhanh gọn, làm rất chắc chắn, mái xếp sử dụng tốt, che nắng mưa hiệu quả, tôi rất hài lòng.",
@@ -19,7 +19,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     name: "Trần Thị Bích",
-    role: "Chủ hộ gia đình, Dĩ An",
+    role: "Chủ hộ gia đình, TP.HCM",
     avatar:
       "http://maihienngoctruc.com/thumbs/80x80x1/upload/news/999-anh-gai-xinh-viet-nam-hot-girl-cute-de-thuong-dep-xiu-ngang6690eae21a8d3-1770571399.webp.webp",
     review:

@@ -28,12 +28,12 @@ export default function AboutSection() {
 
             <div className="bg-gradient-to-br from-white to-blue-50 border-l-4 border-[#1e4d8c] rounded-xl p-5 md:p-6 shadow-sm mb-6">
               <p className="text-gray-700 leading-relaxed text-base">
-                <strong className="text-[#f59e0b]">Mái Hiên Mái Xếp Linh Khương</strong> là đơn vị
-                chuyên tư vấn, thiết kế và thi công các loại mái hiên, mái xếp che nắng mưa
-                cho nhà ở, quán cà phê, nhà hàng và công trình dân dụng. Với đội ngũ thợ
-                lành nghề, thi công đúng kỹ thuật, vật liệu chất lượng và chế độ bảo hành
-                rõ ràng, Linh Khương cam kết mang đến giải pháp mái che bền đẹp, hiệu quả và
-                tiết kiệm chi phí cho khách hàng.
+                <strong className="text-[#f59e0b]">Cửa Cuốn – Mái Hiên Mái Xếp Linh Khương</strong> là
+                đơn vị chuyên tư vấn, thiết kế và thi công <strong>cửa cuốn</strong>, mái hiên,
+                mái xếp di động tại TP.HCM. Với đội ngũ thợ lành nghề, thi công
+                đúng kỹ thuật, vật liệu chất lượng và chế độ bảo hành rõ ràng,{" "}
+                <strong>Linh Khương</strong> cam kết mang đến giải pháp{" "}
+                <strong>cửa cuốn, mái hiên</strong> bền đẹp, hiệu quả và tiết kiệm chi phí.
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export default function AboutSection() {
               <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4]">
                 <Image
                   src="http://maihienngoctruc.com/thumbs/500x400x1/upload/news/ab2-1770360916-1770567529.png.webp"
-                  alt="Đội thợ thi công mái hiên mái xếp Linh Khương tại Bình Dương"
+                  alt="Đội thợ thi công mái hiên mái xếp Linh Khương tại TP.HCM"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 25vw"

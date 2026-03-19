@@ -11,7 +11,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
+  metadataBase: new URL("https://linh-khuong.vercel.app"),
   title: {
     default: siteConfig.seo.title,
     template: siteConfig.seo.titleTemplate,
