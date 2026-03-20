@@ -21,11 +21,11 @@ const highlights = [
 ];
 
 const milestones = [
-  { year: "2013", text: "Những đơn hàng đầu tiên tại Tân Đông Hiệp — tư vấn, nhập hàng Happadoor và lắp đặt trực tiếp" },
-  { year: "2016", text: "Mở rộng sang TP.HCM, thi công 100+ công trình đầu tiên" },
-  { year: "2019", text: "Phủ rộng Đồng Nai, đưa Điều Khiển Thông Minh vào dịch vụ" },
-  { year: "2023", text: "500+ công trình hoàn thành — bảo hành tất cả bằng hợp đồng" },
-  { year: "2025", text: "Ra mắt website, tiếp tục phục vụ 3 tỉnh thành" },
+  { year: "2018", text: "Những đơn hàng đầu tiên tại Tân Đông Hiệp — tư vấn, nhập hàng Happadoor và lắp đặt trực tiếp" },
+  { year: "2020", text: "Mở rộng sang TP.HCM, thi công 100+ công trình đầu tiên" },
+  { year: "2022", text: "Phủ rộng Đồng Nai, đưa Điều Khiển Thông Minh vào dịch vụ" },
+  { year: "2024", text: "500+ công trình hoàn thành — bảo hành tất cả bằng hợp đồng" },
+  { year: "2026", text: "Ra mắt website, tiếp tục phục vụ 3 tỉnh thành" },
 ];
 
 export default function AboutPage() {
