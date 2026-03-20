@@ -29,11 +29,12 @@ export default function AboutSection() {
 
             <div className="bg-gradient-to-br from-white to-blue-50 border-l-4 border-[#1e4d8c] rounded-xl p-5 md:p-6 shadow-sm mb-6">
               <p className="text-gray-700 leading-relaxed text-base">
-                <strong className="text-[#f59e0b]">Linh Khương</strong> bắt đầu từ một xưởng nhỏ
-                tại Tân Đông Hiệp — nơi chúng tôi tự tay thi công từng công trình đầu tiên.
-                Hơn 8 năm sau, <strong>500+ công trình</strong> hoàn thành tại TP.HCM, Bình
-                Dương và Đồng Nai là minh chứng cho cam kết chúng tôi giữ với từng khách hàng:
-                làm đúng, làm đẹp, chịu trách nhiệm đến cùng.
+                <strong className="text-[#f59e0b]">Linh Khương</strong> bắt đầu từ những đơn
+                hàng đầu tiên tại khu vực Tân Đông Hiệp — nơi chúng tôi trực tiếp tư vấn, nhập
+                hàng từ Happadoor và tự tay lắp đặt cho từng khách hàng. Hơn 8 năm sau,{" "}
+                <strong>500+ công trình</strong> hoàn thành tại TP.HCM, Bình Dương và Đồng Nai
+                là minh chứng cho cam kết chúng tôi giữ: làm đúng, làm đẹp, chịu trách nhiệm
+                đến cùng.
                 <br /><br />
                 Chúng tôi không làm qua thầu phụ. Mỗi công trình đều do kỹ thuật viên Linh Khương
                 trực tiếp thi công — <strong>bạn trả tiền cho thợ, không trả cho trung gian</strong>.

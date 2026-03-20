@@ -9,7 +9,11 @@ import { SERVICES } from "@/constants/services";
 function scrollTo(href: string) {
   const id = href.replace("#", "");
   const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: "smooth" });
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  } else {
+    window.location.href = "/" + href;
+  }
 }
 
 export default function Footer() {
@@ -71,11 +75,11 @@ export default function Footer() {
           <ul className="space-y-2 text-sm">
             {SERVICES.map((s) => (
               <li key={s.title} className="flex items-start gap-2">
-                <span className="text-[#1e4d8c] mt-0.5">›</span>
+                <span className="text-[#60a5fa] mt-0.5">›</span>
                 <a
-                  href="#dich-vu"
+                  href="/#dich-vu"
                   onClick={(e) => { e.preventDefault(); scrollTo("#dich-vu"); }}
-                  className="hover:text-[#1e4d8c] transition-colors cursor-pointer"
+                  className="hover:text-white transition-colors cursor-pointer"
                 >
                   {s.title}
                 </a>

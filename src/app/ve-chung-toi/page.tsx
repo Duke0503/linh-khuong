@@ -21,7 +21,7 @@ const highlights = [
 ];
 
 const milestones = [
-  { year: "2013", text: "Thành lập xưởng nhỏ tại Tân Đông Hiệp, Bình Dương" },
+  { year: "2013", text: "Những đơn hàng đầu tiên tại Tân Đông Hiệp — tư vấn, nhập hàng Happadoor và lắp đặt trực tiếp" },
   { year: "2016", text: "Mở rộng sang TP.HCM, thi công 100+ công trình đầu tiên" },
   { year: "2019", text: "Phủ rộng Đồng Nai, đưa Điều Khiển Thông Minh vào dịch vụ" },
   { year: "2023", text: "500+ công trình hoàn thành — bảo hành tất cả bằng hợp đồng" },
@@ -43,7 +43,7 @@ export default function AboutPage() {
               Hơn 8 Năm Tận Tâm —<br className="hidden md:block" /> Linh Khương Không Bán Lời Hứa
             </h1>
             <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
-              Từ một xưởng nhỏ ở Tân Đông Hiệp đến 500+ công trình trên 3 tỉnh thành —
+              Từ những đơn hàng đầu tiên ở Tân Đông Hiệp đến 500+ công trình trên 3 tỉnh thành —
               mỗi công trình đều do kỹ thuật viên Linh Khương trực tiếp thi công.
             </p>
           </div>
@@ -57,11 +57,12 @@ export default function AboutPage() {
               <div>
                 <div className="bg-gradient-to-br from-white to-blue-50 border-l-4 border-[#1e4d8c] rounded-xl p-5 md:p-6 shadow-sm mb-6">
                   <p className="text-gray-700 leading-relaxed text-base">
-                    <strong className="text-[#f59e0b]">Linh Khương</strong> bắt đầu từ một xưởng
-                    nhỏ tại Tân Đông Hiệp — nơi chúng tôi tự tay thi công từng công trình đầu
-                    tiên. Hơn 8 năm sau, <strong>500+ công trình</strong> hoàn thành tại TP.HCM,
-                    Bình Dương và Đồng Nai là minh chứng cho cam kết chúng tôi giữ với từng khách
-                    hàng: làm đúng, làm đẹp, chịu trách nhiệm đến cùng.
+                                    <strong className="text-[#f59e0b]">Linh Khương</strong> bắt đầu từ những
+                    đơn hàng đầu tiên tại khu vực Tân Đông Hiệp — nơi chúng tôi trực tiếp tư
+                    vấn, nhập hàng từ Happadoor và tự tay lắp đặt cho từng khách hàng. Hơn 8 năm
+                    sau, <strong>500+ công trình</strong> hoàn thành tại TP.HCM, Bình Dương và
+                    Đồng Nai là minh chứng cho cam kết chúng tôi giữ: làm đúng, làm đẹp, chịu
+                    trách nhiệm đến cùng.
                     <br />
                     <br />
                     Chúng tôi không làm qua thầu phụ. Mỗi công trình đều do kỹ thuật viên Linh
