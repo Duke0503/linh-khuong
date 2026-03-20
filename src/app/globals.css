@@ -99,10 +99,28 @@ html {
   body {
     @apply bg-background text-foreground;
     font-family: 'Be Vietnam Pro', 'Inter', sans-serif;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
   }
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  /* ── Cross-browser fixed header (iOS Safari, Chrome Android, Edge) ── */
+  .header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* Force GPU compositing — prevents header from disappearing on scroll */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    /* Isolate stacking context — sit above will-change:transform children */
+    isolation: isolate;
   }
 }
 
