@@ -3,8 +3,7 @@ import { CheckCircle, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import { Header, Footer } from "@/shared/components/layout";
 
 export const metadata: Metadata = {
   title: "Về Chúng Tôi — Linh Khương | 8+ Năm Thi Công Cửa Cuốn Mái Hiên TP.HCM",

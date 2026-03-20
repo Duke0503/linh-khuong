@@ -1,14 +1,13 @@
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import FloatActions from "@/components/common/FloatActions";
-import HeroSlider from "@/components/sections/HeroSlider";
-import TrustBar from "@/components/common/TrustBar";
-import ServicesSection from "@/components/sections/ServicesSection";
-import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import BeforeAfterSection from "@/components/sections/BeforeAfterSection";
-// VideoSection: tạm ẩn — chưa có video thực tế
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
-import ContactSection from "@/components/sections/ContactSection";
+import { Header, Footer } from "@/shared/components/layout";
+import { FloatActions, TrustBar } from "@/shared/components/common";
+import {
+  HeroSlider,
+  ServicesSection,
+  WhyChooseUs,
+  BeforeAfterSection,
+  TestimonialsSection,
+  ContactSection,
+} from "@/features/landing/components";
 
 export default function HomePage() {
   return (
