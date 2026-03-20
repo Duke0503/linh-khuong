@@ -33,7 +33,6 @@ export interface Reason {
 export interface Testimonial {
   name: string;
   role: string;
-  avatar: string;
   review: string;
   stars: number;
 }

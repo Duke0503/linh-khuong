@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Star, Quote } from "lucide-react";
 import type { Testimonial } from "@/shared/types";
 
@@ -19,14 +18,10 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
         ))}
       </div>
       <div className="flex items-center gap-3">
-        <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white/50 flex-shrink-0">
-          <Image
-            src={testimonial.avatar}
-            alt={testimonial.name}
-            fill
-            className="object-cover"
-            sizes="48px"
-          />
+        <div className="w-12 h-12 rounded-full border-2 border-white/50 flex-shrink-0 bg-[#1e4d8c] flex items-center justify-center">
+          <span className="text-white font-bold text-base">
+            {testimonial.name.split(" ").slice(-1)[0][0]}
+          </span>
         </div>
         <div>
           <div className="font-bold text-white text-sm">{testimonial.name}</div>
