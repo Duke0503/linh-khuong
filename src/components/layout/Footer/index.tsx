@@ -10,7 +10,8 @@ function scrollTo(href: string) {
   const id = href.replace("#", "");
   const el = document.getElementById(id);
   if (el) {
-    el.scrollIntoView({ behavior: "smooth" });
+    const top = el.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top, behavior: "smooth" });
   } else {
     window.location.href = "/" + href;
   }

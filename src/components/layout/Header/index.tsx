@@ -36,9 +36,9 @@ export default function Header() {
     const id = href.replace("#", "");
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+      const top = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top, behavior: "smooth" });
     } else {
-      // đang ở trang khác → về homepage với hash, browser tự scroll
       window.location.href = "/" + href;
     }
   };
