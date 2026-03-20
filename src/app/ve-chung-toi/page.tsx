@@ -40,7 +40,7 @@ export default function AboutPage() {
               Về chúng tôi
             </p>
             <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-4">
-              Hơn 10 Năm Tận Tâm —<br className="hidden md:block" /> Linh Khương Không Bán Lời Hứa
+              Hơn 8 Năm Tận Tâm —<br className="hidden md:block" /> Linh Khương Không Bán Lời Hứa
             </h1>
             <p className="text-white/80 text-base md:text-lg max-w-2xl mx-auto">
               Từ một xưởng nhỏ ở Tân Đông Hiệp đến 500+ công trình trên 3 tỉnh thành —

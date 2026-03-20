@@ -3,12 +3,14 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Phone } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS } from "@/constants/navigation";
 import { siteConfig } from "@/config/site";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
 
@@ -35,7 +37,12 @@ export default function Header() {
     e.preventDefault();
     const id = href.replace("#", "");
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // đang ở trang khác (vd: /ve-chung-toi) → về homepage rồi scroll
+      router.push("/" + href);
+    }
   };
 
   return (
