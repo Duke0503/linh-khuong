@@ -1,8 +1,18 @@
+import { Award, ShieldCheck, Tag, Package, Clock, type LucideIcon } from "lucide-react";
 import Image from "next/image";
 import { REASONS } from "@/constants/why-choose-us";
+import type { Reason } from "@/types";
 import { siteConfig } from "@/config/site";
 import SectionHeader from "@/components/common/SectionHeader";
 import RevealWrapper from "@/components/common/RevealWrapper";
+
+const ICON_MAP: Record<Reason["icon"], LucideIcon> = {
+  award: Award,
+  "shield-check": ShieldCheck,
+  tag: Tag,
+  package: Package,
+  clock: Clock,
+};
 
 export default function WhyChooseUs() {
   return (
@@ -19,7 +29,7 @@ export default function WhyChooseUs() {
           />
         </RevealWrapper>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
           {/* Left — first 3 reasons */}
           <div className="space-y-6">
             {REASONS.slice(0, 3).map((r, i) => (
@@ -29,7 +39,7 @@ export default function WhyChooseUs() {
             ))}
           </div>
 
-          {/* Center image — ẩn trên mobile, hiện từ lg */}
+          {/* Center image — desktop only */}
           <RevealWrapper direction="up" delay={1} className="hidden lg:block">
             <div className="relative flex justify-center">
               <div className="relative w-full max-w-sm aspect-square">
@@ -58,12 +68,12 @@ export default function WhyChooseUs() {
             <RevealWrapper direction="right" delay={4}>
               <div className="bg-gradient-to-br from-[#1e4d8c] to-[#153870] rounded-2xl p-5 text-white">
                 <h3 className="font-bold text-lg mb-2">Báo giá miễn phí trong ngày!</h3>
-                <p className="text-sm opacity-90 mb-3">
+                <p className="text-base opacity-90 mb-3">
                   Gọi ngay — thợ khảo sát tận nơi, báo giá chi tiết, không phát sinh, không ép mua.
                 </p>
                 <a
                   href={siteConfig.contact.phoneHref}
-                  className="inline-block bg-white text-[#1e4d8c] font-bold px-5 py-2 rounded-full text-sm hover:shadow-lg transition-shadow"
+                  className="inline-block bg-white text-[#1e4d8c] font-bold px-5 py-2.5 rounded-full text-base hover:shadow-lg transition-shadow"
                 >
                   {siteConfig.contact.phone}
                 </a>
@@ -76,23 +86,18 @@ export default function WhyChooseUs() {
   );
 }
 
-function ReasonItem({ reason }: { reason: typeof REASONS[0] }) {
+function ReasonItem({ reason }: { reason: Reason }) {
+  const Icon = ICON_MAP[reason.icon];
   return (
     <div className="flex gap-4 group">
       <div className="bg-blue-50 group-hover:bg-[#1e4d8c] rounded-xl p-3 flex-shrink-0 transition-colors duration-300 h-fit">
-        <Image
-          src={reason.icon}
-          alt={reason.title}
-          width={36}
-          height={40}
-          className="object-contain group-hover:brightness-0 group-hover:invert transition-all duration-300"
-        />
+        <Icon className="w-6 h-6 text-[#1e4d8c] group-hover:text-white transition-colors duration-300" />
       </div>
       <div>
         <h3 className="font-bold text-gray-800 mb-1 group-hover:text-[#1e4d8c] transition-colors">
           {reason.title}
         </h3>
-        <p className="text-gray-500 text-sm leading-relaxed">{reason.desc}</p>
+        <p className="text-gray-500 text-base leading-relaxed">{reason.desc}</p>
       </div>
     </div>
   );

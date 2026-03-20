@@ -52,10 +52,10 @@ export default function Footer() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  onClick={(e) => { e.preventDefault(); scrollTo(item.href); }}
-                  className="hover:text-[#1e4d8c] transition-colors flex items-center gap-2 cursor-pointer"
+                  onClick={item.href.startsWith("#") ? (e) => { e.preventDefault(); scrollTo(item.href); } : undefined}
+                  className="hover:text-white transition-colors flex items-center gap-2 cursor-pointer"
                 >
-                  <span className="text-[#1e4d8c]">›</span>
+                  <span className="text-[#60a5fa]">›</span>
                   {item.label}
                 </a>
               </li>

@@ -23,7 +23,7 @@ export interface Service {
 // ─── Why Choose Us ────────────────────────────────────────────────────────────
 
 export interface Reason {
-  icon: string;
+  icon: "award" | "shield-check" | "tag" | "package" | "clock";
   title: string;
   desc: string;
 }

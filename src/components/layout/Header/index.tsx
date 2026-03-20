@@ -6,6 +6,7 @@ import { Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS } from "@/constants/navigation";
 import { siteConfig } from "@/config/site";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -79,6 +80,9 @@ export default function Header() {
             );
           })}
         </nav>
+
+        {/* Mobile menu */}
+        <MobileMenu onNav={handleNav} />
 
         {/* Right actions */}
         <div className="flex items-center gap-3">

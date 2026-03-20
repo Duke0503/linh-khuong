@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
-    images: [{ url: "https://linh-khuong.vercel.app/banner_lk.png", width: 1200, height: 630, alt: siteConfig.name }],
+    images: [{ url: "https://linh-khuong.vercel.app/banner_lk.jpg", width: 1920, height: 640, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",

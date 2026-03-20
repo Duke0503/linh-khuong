@@ -204,4 +204,23 @@ html {
     gap: 12px;
     align-items: flex-end;
   }
+
+  /* ── prefers-reduced-motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    .reveal-up,
+    .reveal-left,
+    .reveal-right,
+    .reveal-none {
+      transition: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .animate-ring-pulse,
+    .animate-ripple,
+    .animate-ripple-delay,
+    .animate-fade-in {
+      animation: none !important;
+      opacity: 1;
+    }
+  }
 }
