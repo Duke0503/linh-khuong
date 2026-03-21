@@ -207,22 +207,13 @@ export default function ContactSection() {
                 href="https://www.google.com/maps?q=10.959127,106.749853"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded-2xl overflow-hidden shadow-md h-52 md:h-56 relative group"
+                className="flex items-center gap-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-800 rounded-2xl p-5 transition-colors shadow-sm min-h-[44px]"
                 title="Xem trên Google Maps"
               >
-                <iframe
-                  src="https://maps.google.com/maps?q=10.959127,106.749853&z=18&output=embed&hl=vi"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, pointerEvents: "none" }}
-                  loading="lazy"
-                  title="Vị trí Mái Hiên Mái Xếp Linh Khương"
-                  allowFullScreen
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                  <span className="opacity-0 group-hover:opacity-100 transition-opacity bg-white text-gray-800 text-sm font-semibold px-3 py-1.5 rounded-full shadow-md">
-                    Mở Google Maps ↗
-                  </span>
+                <MapPin className="w-8 h-8 text-[#1e4d8c] flex-shrink-0" />
+                <div>
+                  <div className="font-bold text-base">Xem trên Google Maps ↗</div>
+                  <div className="text-sm text-gray-500 mt-0.5">{siteConfig.contact.address}</div>
                 </div>
               </a>
             </div>

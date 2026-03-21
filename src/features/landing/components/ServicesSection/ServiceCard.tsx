@@ -16,7 +16,7 @@ export default function ServiceCard({ service, sizes = "25vw" }: ServiceCardProp
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
           src={service.img}
-          alt={service.title}
+          alt=""
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
           sizes={sizes}
