@@ -9,7 +9,7 @@ const beVietnamPro = Be_Vietnam_Pro({
   weight: ["400", "700"],
   variable: "--font-sans",
   display: "optional",
-  preload: true,
+  preload: false,
 });
 
 const SITE_URL = "https://www.maihienmaixeplinhkhuong.vn";
