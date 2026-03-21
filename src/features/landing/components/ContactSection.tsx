@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Facebook, Send, CheckCircle, Loader2 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import SectionHeader from "@/shared/components/common/SectionHeader";
@@ -217,13 +218,23 @@ export default function ContactSection() {
                 href="https://www.google.com/maps?q=10.959127,106.749853"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-800 rounded-2xl p-5 transition-colors shadow-sm min-h-[44px]"
+                className="block rounded-2xl overflow-hidden shadow-md relative group"
                 title="Xem trên Google Maps"
               >
-                <MapPin className="w-8 h-8 text-[#1e4d8c] flex-shrink-0" />
-                <div>
-                  <div className="font-bold text-base">Xem trên Google Maps ↗</div>
-                  <div className="text-sm text-gray-500 mt-0.5">{siteConfig.contact.address}</div>
+                <div className="relative w-full aspect-[16/9]">
+                  <Image
+                    src="/cuahang-linhkhuong.jpg"
+                    alt="Cửa hàng Linh Khương tại Tân Đông Hiệp, Bình Dương"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-end p-4">
+                    <span className="bg-white/90 text-gray-800 text-sm font-semibold px-3 py-1.5 rounded-full shadow flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-[#1e4d8c]" />
+                      Xem trên Google Maps ↗
+                    </span>
+                  </div>
                 </div>
               </a>
             </div>

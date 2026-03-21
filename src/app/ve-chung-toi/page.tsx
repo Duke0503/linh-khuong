@@ -92,8 +92,8 @@ export default function AboutPage() {
               <div className="relative grid grid-cols-2 gap-4 pb-6">
                 <div className="relative overflow-hidden rounded-2xl shadow-lg aspect-[5/4]">
                   <Image
-                    src="/products/mai-xep-nhieu-tang-nha-pho.jpg"
-                    alt="Đội thợ thi công mái hiên mái xếp Linh Khương tại TP.HCM"
+                    src="/cuahang-linhkhuong.jpg"
+                    alt="Văn phòng cửa hàng Linh Khương tại Tân Đông Hiệp, Bình Dương"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 768px) 50vw, 25vw"
