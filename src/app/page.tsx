@@ -14,14 +14,21 @@ export default function HomePage() {
     <>
       <Header />
       <main className="pt-[80px]">
-        <div id="hero"><HeroSlider /></div>
+        <div id="hero">
+          <HeroSlider />
+        </div>
         <TrustBar />
-        <div id="dich-vu"><ServicesSection /></div>
+        <div id="dich-vu">
+          <ServicesSection />
+        </div>
         <WhyChooseUs />
-        <div id="du-an"><BeforeAfterSection /></div>
-        {/* <VideoSection /> — bật lại khi có video thực tế */}
+        <div id="du-an">
+          <BeforeAfterSection />
+        </div>
         <TestimonialsSection />
-        <div id="lien-he"><ContactSection /></div>
+        <div id="lien-he">
+          <ContactSection />
+        </div>
       </main>
       <Footer />
       <FloatActions />

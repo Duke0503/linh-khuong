@@ -8,10 +8,11 @@ const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["vietnamese", "latin"],
   weight: ["400", "600", "700", "800"],
   variable: "--font-sans",
-  display: "swap",
+  display: "optional",
+  preload: true,
 });
 
-const SITE_URL = "https://maihienmaixeplinhkhuong.vn";
+const SITE_URL = "https://www.maihienmaixeplinhkhuong.vn";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
