@@ -12,7 +12,7 @@ export default function HeroSlider() {
       <div className="relative w-full">
         {/* Banner image — tỉ lệ gốc, không crop */}
         <Image
-          src="/banner_lk.jpg"
+          src="/banner_main.jpg"
           alt="Linh Khương - Thi Công Mái Hiên, Mái Xếp Di Động Uy Tín TP.HCM"
           title="Cửa Cuốn Mái Hiên Linh Khương"
           width={1920}

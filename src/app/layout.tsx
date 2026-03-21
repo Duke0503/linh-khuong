@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
-    images: [{ url: `${SITE_URL}/banner_lk.jpg`, width: 1920, height: 640, alt: siteConfig.name }],
+    images: [{ url: `${SITE_URL}/banner_main.jpg`, width: 1920, height: 640, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",

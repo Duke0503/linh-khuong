@@ -48,7 +48,7 @@ export const siteConfig = {
       "Linh Khương",
       "cơ khí Linh Khương",
     ],
-    ogImage: "/banner_lk.png",
+    ogImage: "/banner_main.jpg",
   },
 } as const;
 
