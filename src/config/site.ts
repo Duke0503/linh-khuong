@@ -10,8 +10,8 @@ export const siteConfig = {
   contact: {
     phone: "0962568910",
     phoneHref: "tel:0962568910",
-    email: "linhkhuong@gmail.com",
-    emailHref: "mailto:linhkhuong@gmail.com",
+    email: "maibatxeplinhkhuong@gmail.com",
+    emailHref: "mailto:maibatxeplinhkhuong@gmail.com",
     zaloHref: "https://zalo.me/0962568910",
     facebook: "https://www.facebook.com/profile.php?id=61587717441680",
     address: "126/22 Liên Huyện, Tân Hiệp, Phường Tân Đông Hiệp, Thành phố Hồ Chí Minh",

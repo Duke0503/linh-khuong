@@ -47,9 +47,19 @@ export default function ContactSection() {
     }
     setErrors({});
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1000));
-    setSubmitted(true);
-    setLoading(false);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setErrors({ message: "Gửi thất bại, vui lòng gọi trực tiếp hoặc thử lại." });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (field: keyof FormState) => (
@@ -181,7 +191,7 @@ export default function ContactSection() {
                   </a>
                   <a href={siteConfig.contact.emailHref} className="flex items-center gap-4 hover:opacity-80 transition-opacity min-h-[44px]">
                     <div className="bg-white/20 p-3 rounded-full flex-shrink-0"><Mail className="w-5 h-5" /></div>
-                    <div><div className="text-sm opacity-90">Email</div><div className="font-semibold">{siteConfig.contact.email}</div></div>
+                    <div><div className="text-sm opacity-90">Email</div><div className="font-semibold">Gửi email cho chúng tôi</div></div>
                   </a>
                   <div className="flex items-start gap-4">
                     <div className="bg-white/20 p-3 rounded-full flex-shrink-0"><MapPin className="w-5 h-5" /></div>

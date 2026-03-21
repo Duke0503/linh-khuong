@@ -6,7 +6,7 @@ import { siteConfig, structuredData } from "@/config/site";
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["vietnamese", "latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["400", "700"],
   variable: "--font-sans",
   display: "optional",
   preload: true,
