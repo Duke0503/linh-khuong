@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { siteConfig, structuredData } from "@/config/site";
 
@@ -10,8 +11,10 @@ const beVietnamPro = Be_Vietnam_Pro({
   display: "swap",
 });
 
+const SITE_URL = "https://maihienmaixeplinhkhuong.vn";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://linh-khuong.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: siteConfig.seo.title,
     template: siteConfig.seo.titleTemplate,
@@ -29,18 +32,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "vi_VN",
-    url: "https://linh-khuong.vercel.app",
+    url: SITE_URL,
     siteName: siteConfig.name,
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
-    images: [{ url: "https://linh-khuong.vercel.app/banner_lk.jpg", width: 1920, height: 640, alt: siteConfig.name }],
+    images: [{ url: `${SITE_URL}/banner_lk.jpg`, width: 1920, height: 640, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
   },
-  alternates: { canonical: "https://linh-khuong.vercel.app" },
+  alternates: { canonical: SITE_URL },
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
@@ -48,9 +51,7 @@ export const metadata: Metadata = {
       { url: "/favicon.ico" },
     ],
     apple: [{ url: "/apple-touch-icon.png" }],
-    other: [
-      { rel: "manifest", url: "/site.webmanifest" },
-    ],
+    other: [{ rel: "manifest", url: "/site.webmanifest" }],
   },
   other: {
     "geo.region": "VN-SG",
@@ -70,18 +71,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+      </head>
+      <body className={`${beVietnamPro.variable} antialiased`}>
+        {children}
         {gaId && (
           <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gaId}');`,
-              }}
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
             />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gaId}');`}
+            </Script>
           </>
         )}
-      </head>
-      <body className={`${beVietnamPro.variable} antialiased`}>{children}</body>
+      </body>
     </html>
   );
 }
