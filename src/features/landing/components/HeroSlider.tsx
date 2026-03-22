@@ -11,7 +11,7 @@ export default function HeroSlider() {
       </h1>
       <div className="relative w-full">
         <Image
-          src="/banner_main.jpg"
+          src="/banner_main.png"
           alt="Linh Khương - Thi Công Mái Hiên, Mái Xếp Di Động Uy Tín TP.HCM"
           title="Cửa Cuốn Mái Hiên Linh Khương"
           width={1920}
