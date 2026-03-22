@@ -10,7 +10,6 @@ export default function HeroSlider() {
         Cửa Cuốn Linh Khương — Thi Công Mái Hiên, Mái Xếp Uy Tín TP.HCM
       </h1>
       <div className="relative w-full">
-        {/* Banner image — tỉ lệ gốc, không crop */}
         <Image
           src="/banner_main.jpg"
           alt="Linh Khương - Thi Công Mái Hiên, Mái Xếp Di Động Uy Tín TP.HCM"
@@ -22,38 +21,26 @@ export default function HeroSlider() {
           fetchPriority="high"
           sizes="100vw"
         />
+      </div>
 
-        {/* Gradient overlay phía dưới để button nổi trên ảnh */}
-        <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
-
-        {/* Trust badges */}
-        <div className="absolute bottom-16 md:bottom-24 left-1/2 -translate-x-1/2 hidden sm:flex flex-wrap justify-center gap-2">
-          {["Công Nghệ Đức · Đài Loan · Úc", "Điều Khiển Thông Minh", "Bình Lưu Điện", "Happadoor Chính Hãng"].map((badge) => (
-            <span key={badge} className="bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1 rounded-full border border-white/30">
-              {badge}
-            </span>
-          ))}
-        </div>
-
-        {/* CTA buttons */}
-        <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
-          <a
-            href={siteConfig.contact.phoneHref}
-            className="flex items-center gap-2 bg-[#1e4d8c] hover:bg-[#153870] active:scale-95 text-white px-5 py-3 md:px-7 md:py-3.5 rounded-full font-semibold text-sm md:text-base transition-all shadow-lg whitespace-nowrap min-h-[48px]"
-          >
-            <Phone className="w-4 h-4 flex-shrink-0" />
-            Liên hệ ngay
-          </a>
-          <a
-            href={siteConfig.contact.zaloHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-[#0068ff] hover:bg-[#0055cc] active:scale-95 text-white px-5 py-3 md:px-7 md:py-3.5 rounded-full font-semibold text-sm md:text-base transition-all shadow-lg whitespace-nowrap min-h-[48px]"
-          >
-            <MessageCircle className="w-4 h-4 flex-shrink-0" />
-            Zalo
-          </a>
-        </div>
+      {/* Mobile: buttons bên dưới ảnh, không che text */}
+      <div className="flex md:hidden gap-3 justify-center px-4 py-3 bg-[#0f2447]">
+        <a
+          href={siteConfig.contact.phoneHref}
+          className="flex items-center gap-2 bg-[#1e4d8c] text-white px-5 py-3 rounded-full font-semibold text-sm flex-1 justify-center min-h-[48px]"
+        >
+          <Phone className="w-4 h-4 flex-shrink-0" />
+          Liên hệ ngay
+        </a>
+        <a
+          href={siteConfig.contact.zaloHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-[#0068ff] text-white px-5 py-3 rounded-full font-semibold text-sm flex-1 justify-center min-h-[48px]"
+        >
+          <MessageCircle className="w-4 h-4 flex-shrink-0" />
+          Zalo
+        </a>
       </div>
     </section>
   );
