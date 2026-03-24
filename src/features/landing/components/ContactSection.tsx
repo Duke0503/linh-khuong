@@ -77,7 +77,8 @@ export default function ContactSection() {
           eyebrow="Liên hệ ngay"
           title={
             <>
-              Mái Hiên Mái Xếp <span className="text-[#1e4d8c]">Linh Khương</span>
+              Mái Hiên Mái Xếp{" "}
+              <span className="text-[#1e4d8c]">Linh Khương</span>
             </>
           }
           subtitle="Để lại thông tin — chúng tôi sẽ liên hệ hỗ trợ bạn ngay!"
@@ -95,12 +96,18 @@ export default function ContactSection() {
               {submitted ? (
                 <div className="flex flex-col items-center justify-center py-10 gap-4 text-center">
                   <CheckCircle className="w-16 h-16 text-green-500" />
-                  <h4 className="text-xl font-bold text-gray-800">Gửi thành công!</h4>
+                  <h4 className="text-xl font-bold text-gray-800">
+                    Gửi thành công!
+                  </h4>
                   <p className="text-gray-500 text-base">
-                    Chúng tôi đã nhận được thông tin. Sẽ liên hệ lại sớm nhất có thể.
+                    Chúng tôi đã nhận được thông tin. Sẽ liên hệ lại sớm nhất có
+                    thể.
                   </p>
                   <button
-                    onClick={() => { setSubmitted(false); setForm(INITIAL_FORM); }}
+                    onClick={() => {
+                      setSubmitted(false);
+                      setForm(INITIAL_FORM);
+                    }}
                     className="text-[#1e4d8c] text-base font-medium px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors min-h-[44px]"
                   >
                     Gửi lại
@@ -119,11 +126,15 @@ export default function ContactSection() {
                         value={form.name}
                         onChange={handleChange("name")}
                         className={`w-full border rounded-xl px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#1e4d8c] focus:border-transparent transition-all ${
-                          errors.name ? "border-red-400 bg-red-50" : "border-gray-300"
+                          errors.name
+                            ? "border-red-400 bg-red-50"
+                            : "border-gray-300"
                         }`}
                       />
                       {errors.name && (
-                        <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.name}
+                        </p>
                       )}
                     </div>
                     <div>
@@ -136,11 +147,15 @@ export default function ContactSection() {
                         value={form.phone}
                         onChange={handleChange("phone")}
                         className={`w-full border rounded-xl px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#1e4d8c] focus:border-transparent transition-all ${
-                          errors.phone ? "border-red-400 bg-red-50" : "border-gray-300"
+                          errors.phone
+                            ? "border-red-400 bg-red-50"
+                            : "border-gray-300"
                         }`}
                       />
                       {errors.phone && (
-                        <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
+                        <p className="text-red-500 text-sm mt-1">
+                          {errors.phone}
+                        </p>
                       )}
                     </div>
                   </div>
@@ -154,11 +169,15 @@ export default function ContactSection() {
                       value={form.message}
                       onChange={handleChange("message")}
                       className={`w-full border rounded-xl px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-[#1e4d8c] focus:border-transparent transition-all resize-none ${
-                        errors.message ? "border-red-400 bg-red-50" : "border-gray-300"
+                        errors.message
+                          ? "border-red-400 bg-red-50"
+                          : "border-gray-300"
                       }`}
                     />
                     {errors.message && (
-                      <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.message}
+                      </p>
                     )}
                   </div>
                   <button
@@ -186,17 +205,44 @@ export default function ContactSection() {
               <div className="bg-gradient-to-br from-[#1e4d8c] to-[#153870] rounded-2xl p-6 text-white">
                 <h3 className="text-xl font-bold mb-5">Thông Tin Liên Hệ</h3>
                 <div className="space-y-4">
-                  <a href={siteConfig.contact.phoneHref} className="flex items-center gap-4 hover:opacity-80 transition-opacity min-h-[44px]">
-                    <div className="bg-white/20 p-3 rounded-full flex-shrink-0"><Phone className="w-5 h-5" /></div>
-                    <div><div className="text-sm opacity-90">Hotline</div><div className="font-bold text-lg">{siteConfig.contact.phone}</div></div>
+                  <a
+                    href={siteConfig.contact.phoneHref}
+                    className="flex items-center gap-4 hover:opacity-80 transition-opacity min-h-[44px]"
+                  >
+                    <div className="bg-white/20 p-3 rounded-full flex-shrink-0">
+                      <Phone className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="text-sm opacity-90">Hotline</div>
+                      <div className="font-bold text-lg">
+                        {siteConfig.contact.phone}
+                      </div>
+                    </div>
                   </a>
-                  <a href={siteConfig.contact.emailHref} className="flex items-center gap-4 hover:opacity-80 transition-opacity min-h-[44px]">
-                    <div className="bg-white/20 p-3 rounded-full flex-shrink-0"><Mail className="w-5 h-5" /></div>
-                    <div><div className="text-sm opacity-90">Email</div><div className="font-semibold">Gửi email cho chúng tôi</div></div>
+                  <a
+                    href={siteConfig.contact.emailHref}
+                    className="flex items-center gap-4 hover:opacity-80 transition-opacity min-h-[44px]"
+                  >
+                    <div className="bg-white/20 p-3 rounded-full flex-shrink-0">
+                      <Mail className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="text-sm opacity-90">Email</div>
+                      <div className="font-semibold">
+                        Gửi email cho chúng tôi
+                      </div>
+                    </div>
                   </a>
                   <div className="flex items-start gap-4">
-                    <div className="bg-white/20 p-3 rounded-full flex-shrink-0"><MapPin className="w-5 h-5" /></div>
-                    <div><div className="text-sm opacity-90">Địa chỉ</div><div className="font-semibold">{siteConfig.contact.address}</div></div>
+                    <div className="bg-white/20 p-3 rounded-full flex-shrink-0">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="text-sm opacity-90">Địa chỉ</div>
+                      <div className="font-semibold">
+                        {siteConfig.contact.address}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -210,12 +256,14 @@ export default function ContactSection() {
                 <Facebook className="w-10 h-10 flex-shrink-0" />
                 <div>
                   <div className="font-bold text-lg">Theo dõi Facebook</div>
-                  <div className="text-base opacity-90">Cập nhật các công trình mới nhất của Linh Khương</div>
+                  <div className="text-base opacity-90">
+                    Cập nhật các công trình mới nhất của Linh Khương
+                  </div>
                 </div>
               </a>
 
               <a
-                href="https://www.google.com/maps?q=10.959127,106.749853"
+                href="https://www.google.com/maps?q=10.959119,106.749853"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block rounded-2xl overflow-hidden shadow-md relative group"

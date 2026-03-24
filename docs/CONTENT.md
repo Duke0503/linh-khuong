@@ -316,7 +316,7 @@ Cập nhật các công trình mới nhất của Linh Khương
 ```
 
 ### Google Maps
-- Tọa độ: 10.959127, 106.749853
+- Tọa độ: 10.959119, 106.749853
 - Text hover: `Mở Google Maps ↗`
 
 ---
