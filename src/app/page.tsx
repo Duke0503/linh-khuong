@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main className="pt-[80px]">
+      <main className="relative flex flex-col">
         <div id="hero">
           <HeroSlider />
         </div>

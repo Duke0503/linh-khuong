@@ -1,11 +1,12 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const TO_EMAIL = "maibatxeplinhkhuong@gmail.com";
 
 export async function POST(req: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY || "re_123");
+    
     const { name, phone, message } = await req.json();
 
     if (!name || !phone || !message) {
@@ -27,7 +28,8 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ ok: true });
-  } catch {
+  } catch (error) {
+    console.error("Failed to send email:", error);
     return NextResponse.json({ error: "Gửi thất bại" }, { status: 500 });
   }
 }

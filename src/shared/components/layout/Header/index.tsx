@@ -16,7 +16,6 @@ export default function Header() {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      // Highlight active nav item based on scroll position
       const sectionIds = NAV_ITEMS.map((i) => i.href.replace("#", ""));
       for (const id of [...sectionIds].reverse()) {
         const el = document.getElementById(id);
@@ -31,7 +30,7 @@ export default function Header() {
   }, []);
 
   const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (!href.startsWith("#")) return; // page links — normal navigation
+    if (!href.startsWith("#")) return;
     e.preventDefault();
     const id = href.replace("#", "");
     const el = document.getElementById(id);
@@ -46,25 +45,25 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "header-fixed z-[200] transition-colors transition-shadow duration-300",
-        scrolled ? "bg-white shadow-md py-2" : "bg-white py-3"
+        "sticky top-0 left-0 right-0 z-[200] bg-white transition-all duration-300",
+        scrolled ? "shadow-[0_4px_20px_rgba(0,0,0,0.05)] py-2" : "border-b border-gray-100 py-3 lg:py-4"
       )}
     >
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-14">
+      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#hero" onClick={(e) => handleNav(e, "#hero")} className="flex-shrink-0">
           <Image
             src={siteConfig.logo}
             alt={siteConfig.name}
-            width={160}
-            height={50}
-            className="h-9 lg:h-12 w-auto object-contain max-w-[120px] lg:max-w-none"
+            width={180}
+            height={60}
+            className="h-10 lg:h-12 w-auto object-contain"
             priority
           />
         </a>
 
-        {/* Desktop navigation */}
-        <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
           {NAV_ITEMS.map((item) => {
             const id = item.href.replace("#", "");
             const isActive = activeSection === id;
@@ -74,10 +73,10 @@ export default function Header() {
                 href={item.href}
                 onClick={(e) => handleNav(e, item.href)}
                 className={cn(
-                  "px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                  "text-[15px] font-semibold tracking-wide transition-colors duration-200 relative py-2",
                   isActive
-                    ? "text-[#1e4d8c] bg-blue-50 font-semibold"
-                    : "text-gray-700 hover:text-[#1e4d8c] hover:bg-blue-50"
+                    ? "text-[#1e4d8c] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-[#1e4d8c]"
+                    : "text-gray-600 hover:text-[#1e4d8c]"
                 )}
               >
                 {item.label}
@@ -86,27 +85,29 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Mobile menu */}
-        <MobileMenu onNav={handleNav} />
-
         {/* Right actions */}
-        <div className="flex items-center gap-3">
-          {/* Mobile: icon-only call button */}
+        <div className="flex items-center gap-4">
+          <MobileMenu onNav={handleNav} />
+          
+          {/* Desktop Call */}
           <a
             href={siteConfig.contact.phoneHref}
-            className="lg:hidden flex items-center gap-1.5 bg-[#1e4d8c] text-white px-3 py-2 rounded-full text-xs font-semibold"
+            className="hidden lg:flex items-center gap-2.5 bg-[#f59e0b] hover:bg-[#d97706] text-[#0f2447] px-6 py-2.5 rounded-lg text-sm font-bold shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5"
+          >
+            <div className="bg-white/30 p-1 rounded-full">
+              <Phone className="w-4 h-4" />
+            </div>
+            {siteConfig.contact.phone}
+          </a>
+          
+          {/* Mobile Call CTA */}
+          <a
+            href={siteConfig.contact.phoneHref}
+            className="lg:hidden flex items-center gap-2 bg-[#f59e0b] active:bg-[#d97706] text-[#0f2447] px-4 py-2 rounded-md text-sm font-bold shadow-sm"
             aria-label={`Gọi ngay ${siteConfig.contact.phone}`}
           >
-            <Phone className="w-3.5 h-3.5" />
-            Gọi ngay
-          </a>
-          {/* Desktop: full phone number */}
-          <a
-            href={siteConfig.contact.phoneHref}
-            className="hidden lg:flex items-center gap-2 bg-[#1e4d8c] text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#153870] transition-colors"
-          >
             <Phone className="w-4 h-4" />
-            {siteConfig.contact.phone}
+            Gọi Ngay
           </a>
         </div>
       </div>
