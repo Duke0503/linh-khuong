@@ -16,7 +16,7 @@ export default function HeroSlider() {
           alt="Cửa Cuốn Mái Hiên Linh Khương"
           width={1920}
           height={640}
-          className="w-full max-h-[75vh] object-cover block object-center"
+          className="w-full h-auto block"
           priority
           fetchPriority="high"
         />
