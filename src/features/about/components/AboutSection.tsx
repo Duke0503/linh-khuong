@@ -8,7 +8,6 @@ export default function AboutSection() {
     "8+ năm · 500+ công trình · TP.HCM · Bình Dương · Đồng Nai",
     "Kỹ thuật viên trực tiếp thi công — không qua thầu phụ, bạn trả tiền cho thợ",
     "Vật liệu Happadoor chính hãng có CO/CQ · Công nghệ Đức · Đài Loan · Úc",
-    "Bảo hành bằng hợp đồng — sự cố có thợ trong 24h, không đổ lỗi",
     "Khảo sát tận nơi & báo giá miễn phí — không phát sinh, không ép mua",
   ];
 

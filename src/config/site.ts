@@ -13,7 +13,7 @@ export const siteConfig = {
     email: "maibatxeplinhkhuong@gmail.com",
     emailHref: "mailto:maibatxeplinhkhuong@gmail.com",
     zaloHref: "https://zalo.me/0962568910",
-    facebook: "https://www.facebook.com/profile.php?id=61587717441680",
+    facebook: "https://www.facebook.com/profile.php?id=61579560238409&mibextid=ZbWKwL",
     address: "126/22 Liên Huyện, Tân Hiệp, Phường Tân Đông Hiệp, Thành phố Hồ Chí Minh",
     geo: { lat: "10.959119", lng: "106.749853" },
   },

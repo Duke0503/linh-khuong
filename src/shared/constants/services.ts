@@ -17,7 +17,7 @@ export const SERVICES: Service[] = [
     title: "Cửa Cuốn, Cửa Kéo",
     href: "#dich-vu",
     img: "/products/cua-cuon-xam-biet-thu.jpg",
-    desc: "3 dòng công nghệ: Đức · Đài Loan · Úc. Vật liệu Happadoor chính hãng, có CO/CQ. Bảo hành bằng hợp đồng.",
+    desc: "3 dòng công nghệ: Đức · Đài Loan · Úc. Vật liệu Happadoor chính hãng, có CO/CQ.",
   },
   {
     title: "Mái Vòm",

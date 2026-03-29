@@ -6,16 +6,16 @@ import { siteConfig } from "@/config/site";
 import { Header, Footer } from "@/shared/components/layout";
 
 export const metadata: Metadata = {
-  title: "Về Chúng Tôi — Linh Khương | 8+ Năm Thi Công Cửa Cuốn Mái Hiên TP.HCM",
+  title:
+    "Về Chúng Tôi — Linh Khương | 8+ Năm Thi Công Cửa Cuốn Mái Hiên TP.HCM",
   description:
-    "Hơn 8 năm thi công trực tiếp, 500+ công trình tại TP.HCM, Bình Dương, Đồng Nai. Vật liệu Happadoor chính hãng, bảo hành bằng hợp đồng, không qua thầu phụ.",
+    "Hơn 8 năm thi công trực tiếp, 500+ công trình tại TP.HCM, Bình Dương, Đồng Nai. Vật liệu Happadoor chính hãng, không qua thầu phụ.",
 };
 
 const highlights = [
   "8+ năm · 500+ công trình · TP.HCM · Bình Dương · Đồng Nai",
   "Kỹ thuật viên trực tiếp thi công — không qua thầu phụ, bạn trả tiền cho thợ",
   "Vật liệu Happadoor chính hãng có CO/CQ · Công nghệ Đức · Đài Loan · Úc",
-  "Bảo hành bằng hợp đồng — sự cố có thợ trong 24h, không đổ lỗi",
   "Khảo sát tận nơi & báo giá miễn phí — không phát sinh, không ép mua",
 ];
 

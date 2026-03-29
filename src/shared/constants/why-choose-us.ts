@@ -7,11 +7,6 @@ export const REASONS: Reason[] = [
     desc: "500+ công trình tại TP.HCM, Bình Dương, Đồng Nai — không phải lời hứa, là hình ảnh thực tế có thể xem tận mắt.",
   },
   {
-    icon: "shield-check",
-    title: "Bảo Hành Bằng Hợp Đồng",
-    desc: "Cam kết bằng văn bản — có sự cố, thợ có mặt trong 24h, không đổ lỗi, không né tránh.",
-  },
-  {
     icon: "tag",
     title: "Báo Giá Miễn Phí, Không Ép Mua",
     desc: "Khảo sát tận nơi, báo giá chi tiết trong ngày. Không hài lòng — không mất gì.",
